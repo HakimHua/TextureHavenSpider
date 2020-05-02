@@ -1,0 +1,752 @@
+2020-05-02 12:25:56 [scrapy.utils.log] INFO: Scrapy 2.1.0 started (bot: TextureHavenSpider)
+2020-05-02 12:25:56 [scrapy.utils.log] INFO: Versions: lxml 4.5.0.0, libxml2 2.9.5, cssselect 1.1.0, parsel 1.5.2, w3lib 1.21.0, Twisted 20.3.0, Python 3.7.5 (tags/v3.7.5:5c02a39a0b, Oct 15 2019, 00:11:34) [MSC v.1916 64 bit (AMD64)], pyOpenSSL 19.1.0 (OpenSSL 1.1.1g  21 Apr 2020), cryptography 2.9.2, Platform Windows-10-10.0.18362-SP0
+2020-05-02 12:25:56 [scrapy.utils.log] DEBUG: Using reactor: twisted.internet.selectreactor.SelectReactor
+2020-05-02 12:25:56 [scrapy.crawler] INFO: Overridden settings:
+{'BOT_NAME': 'TextureHavenSpider',
+ 'LOG_FILE': 'spider.log',
+ 'NEWSPIDER_MODULE': 'TextureHavenSpider.spiders',
+ 'SPIDER_MODULES': ['TextureHavenSpider.spiders']}
+2020-05-02 12:25:56 [scrapy.extensions.telnet] INFO: Telnet Password: e4c530cdd2b701ae
+2020-05-02 12:25:56 [scrapy.middleware] INFO: Enabled extensions:
+['scrapy.extensions.corestats.CoreStats',
+ 'scrapy.extensions.telnet.TelnetConsole',
+ 'scrapy.extensions.logstats.LogStats']
+2020-05-02 12:25:56 [scrapy.middleware] INFO: Enabled downloader middlewares:
+['scrapy.downloadermiddlewares.httpauth.HttpAuthMiddleware',
+ 'scrapy.downloadermiddlewares.downloadtimeout.DownloadTimeoutMiddleware',
+ 'scrapy.downloadermiddlewares.defaultheaders.DefaultHeadersMiddleware',
+ 'scrapy.downloadermiddlewares.useragent.UserAgentMiddleware',
+ 'scrapy.downloadermiddlewares.retry.RetryMiddleware',
+ 'scrapy.downloadermiddlewares.redirect.MetaRefreshMiddleware',
+ 'scrapy.downloadermiddlewares.httpcompression.HttpCompressionMiddleware',
+ 'scrapy.downloadermiddlewares.redirect.RedirectMiddleware',
+ 'scrapy.downloadermiddlewares.cookies.CookiesMiddleware',
+ 'scrapy.downloadermiddlewares.httpproxy.HttpProxyMiddleware',
+ 'scrapy.downloadermiddlewares.stats.DownloaderStats']
+2020-05-02 12:25:56 [scrapy.middleware] INFO: Enabled spider middlewares:
+['scrapy.spidermiddlewares.httperror.HttpErrorMiddleware',
+ 'scrapy.spidermiddlewares.offsite.OffsiteMiddleware',
+ 'scrapy.spidermiddlewares.referer.RefererMiddleware',
+ 'scrapy.spidermiddlewares.urllength.UrlLengthMiddleware',
+ 'scrapy.spidermiddlewares.depth.DepthMiddleware']
+2020-05-02 12:25:56 [scrapy.middleware] INFO: Enabled item pipelines:
+['TextureHavenSpider.pipelines.MyImagesPipeline',
+ 'TextureHavenSpider.pipelines.SQLitePipeline']
+2020-05-02 12:25:56 [scrapy.core.engine] INFO: Spider opened
+2020-05-02 12:25:57 [scrapy.extensions.logstats] INFO: Crawled 0 pages (at 0 pages/min), scraped 0 items (at 0 items/min)
+2020-05-02 12:25:57 [scrapy.extensions.telnet] INFO: Telnet console listening on 127.0.0.1:6023
+2020-05-02 12:25:57 [scrapy.downloadermiddlewares.redirect] DEBUG: Redirecting (301) to <GET https://texturehaven.com/textures/> from <GET https://texturehaven.com/textures>
+2020-05-02 12:25:58 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://texturehaven.com/textures/> (referer: None)
+2020-05-02 12:25:58 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://texturehaven.com//textures/?c=bricks> (referer: https://texturehaven.com/textures/)
+2020-05-02 12:25:59 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://texturehaven.com//textures/?c=wood> (referer: https://texturehaven.com/textures/)
+2020-05-02 12:25:59 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://texturehaven.com//textures/?c=floor> (referer: https://texturehaven.com/textures/)
+2020-05-02 12:25:59 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://texturehaven.com//textures/?c=concrete> (referer: https://texturehaven.com/textures/)
+2020-05-02 12:25:59 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://texturehaven.com//tex/?c=bricks&t=white_bricks> (referer: https://texturehaven.com//textures/?c=bricks)
+2020-05-02 12:25:59 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://texturehaven.com//textures/?c=metal> (referer: https://texturehaven.com/textures/)
+2020-05-02 12:25:59 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://texturehaven.com//textures/?c=terrain> (referer: https://texturehaven.com/textures/)
+2020-05-02 12:25:59 [scrapy.pipelines.files] DEBUG: File (uptodate): Downloaded image from <GET https://texturehaven.com//files/tex_images/thumbnails/b86b3a6271744da0dc1932233914b82d_150_85.jpg> referred in <None>
+2020-05-02 12:25:59 [scrapy.pipelines.files] DEBUG: File (uptodate): Downloaded image from <GET https://texturehaven.com//files/tex_images/thumbnails/7050c722cd3253b187d02e70a191581e_350_90.jpg> referred in <None>
+2020-05-02 12:25:59 [scrapy.core.scraper] DEBUG: Scraped from <200 https://texturehaven.com//tex/?c=bricks&t=white_bricks>
+None
+2020-05-02 12:25:59 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://texturehaven.com//tex/?c=bricks&t=plaster_brick_01> (referer: https://texturehaven.com//textures/?c=bricks)
+2020-05-02 12:25:59 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://texturehaven.com//tex/?c=bricks&t=yellow_bricks> (referer: https://texturehaven.com//textures/?c=bricks)
+2020-05-02 12:25:59 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://texturehaven.com//tex/?c=bricks&t=random_bricks_thick> (referer: https://texturehaven.com//textures/?c=bricks)
+2020-05-02 12:25:59 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://texturehaven.com//textures/?c=sandstone> (referer: https://texturehaven.com/textures/)
+2020-05-02 12:25:59 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://texturehaven.com//tex/?c=bricks&t=yellow_brick> (referer: https://texturehaven.com//textures/?c=bricks)
+2020-05-02 12:26:00 [scrapy.pipelines.files] DEBUG: File (uptodate): Downloaded image from <GET https://texturehaven.com//files/tex_images/thumbnails/ab65d17c64f0fa60ecb1de9a3a46211b_350_90.jpg> referred in <None>
+2020-05-02 12:26:00 [scrapy.pipelines.files] DEBUG: File (uptodate): Downloaded image from <GET https://texturehaven.com//files/tex_images/thumbnails/44d7977ab459b78e9315306562d0f103_350_90.jpg> referred in <None>
+2020-05-02 12:26:00 [scrapy.pipelines.files] DEBUG: File (uptodate): Downloaded image from <GET https://texturehaven.com//files/tex_images/thumbnails/1d51059bab9fba13f77049ee97c1bffb_350_90.jpg> referred in <None>
+2020-05-02 12:26:00 [scrapy.pipelines.files] DEBUG: File (uptodate): Downloaded image from <GET https://texturehaven.com//files/tex_images/thumbnails/a6b5290b3ae0c7c508dbd116e631dd96_350_90.jpg> referred in <None>
+2020-05-02 12:26:00 [scrapy.core.scraper] DEBUG: Scraped from <200 https://texturehaven.com//tex/?c=bricks&t=plaster_brick_01>
+None
+2020-05-02 12:26:00 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://texturehaven.com//tex/?c=floor&t=floor_klinkers_01> (referer: https://texturehaven.com//textures/?c=floor)
+2020-05-02 12:26:00 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://texturehaven.com//tex/?c=bricks&t=brown_brick_02> (referer: https://texturehaven.com//textures/?c=bricks)
+2020-05-02 12:26:00 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://texturehaven.com//tex/?c=bricks&t=red_bricks_02> (referer: https://texturehaven.com//textures/?c=bricks)
+2020-05-02 12:26:00 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://texturehaven.com//tex/?c=bricks&t=red_brick_plaster_patch_02> (referer: https://texturehaven.com//textures/?c=bricks)
+2020-05-02 12:26:00 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://texturehaven.com//tex/?c=bricks&t=castle_brick_02_white> (referer: https://texturehaven.com//textures/?c=bricks)
+2020-05-02 12:26:00 [scrapy.core.scraper] DEBUG: Scraped from <200 https://texturehaven.com//tex/?c=bricks&t=yellow_bricks>
+None
+2020-05-02 12:26:01 [scrapy.core.scraper] DEBUG: Scraped from <200 https://texturehaven.com//tex/?c=bricks&t=random_bricks_thick>
+None
+2020-05-02 12:26:01 [scrapy.core.scraper] DEBUG: Scraped from <200 https://texturehaven.com//tex/?c=bricks&t=yellow_brick>
+None
+2020-05-02 12:26:01 [scrapy.pipelines.files] DEBUG: File (uptodate): Downloaded image from <GET https://texturehaven.com//files/tex_images/thumbnails/f99d01ff429775b8e5850a957310bc36_150_85.jpg> referred in <None>
+2020-05-02 12:26:01 [scrapy.pipelines.files] DEBUG: File (uptodate): Downloaded image from <GET https://texturehaven.com//files/tex_images/thumbnails/51c0696973b84a767d224afd844402cf_350_90.jpg> referred in <None>
+2020-05-02 12:26:01 [scrapy.pipelines.files] DEBUG: File (uptodate): Downloaded image from <GET https://texturehaven.com//files/tex_images/thumbnails/31807eb2a0c239898eee27f404478ee6_350_90.jpg> referred in <None>
+2020-05-02 12:26:01 [scrapy.pipelines.files] DEBUG: File (uptodate): Downloaded image from <GET https://texturehaven.com//files/tex_images/thumbnails/e1550fad1c6b82fe714c1aaaf2f6180d_350_90.jpg> referred in <None>
+2020-05-02 12:26:01 [scrapy.pipelines.files] DEBUG: File (uptodate): Downloaded image from <GET https://texturehaven.com//files/tex_images/thumbnails/ae1d1f8752920088807a12b1f446e7af_350_90.jpg> referred in <None>
+2020-05-02 12:26:01 [scrapy.pipelines.files] DEBUG: File (uptodate): Downloaded image from <GET https://texturehaven.com//files/tex_images/thumbnails/dc2833bbf58351763b41fc1a1874111e_350_90.jpg> referred in <None>
+2020-05-02 12:26:01 [scrapy.core.scraper] DEBUG: Scraped from <200 https://texturehaven.com//tex/?c=floor&t=floor_klinkers_01>
+None
+2020-05-02 12:26:01 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://texturehaven.com//tex/?c=floor&t=cobblestone_floor_02> (referer: https://texturehaven.com//textures/?c=floor)
+2020-05-02 12:26:01 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://texturehaven.com//tex/?c=floor&t=cobblestone_floor_05> (referer: https://texturehaven.com//textures/?c=floor)
+2020-05-02 12:26:01 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://texturehaven.com//textures/?c=plaster> (referer: https://texturehaven.com/textures/)
+2020-05-02 12:26:01 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://texturehaven.com//tex/?c=terrain&t=snow_04> (referer: https://texturehaven.com//textures/?c=terrain)
+2020-05-02 12:26:01 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://texturehaven.com//tex/?c=terrain&t=snow_03> (referer: https://texturehaven.com//textures/?c=terrain)
+2020-05-02 12:26:01 [scrapy.core.scraper] DEBUG: Scraped from <200 https://texturehaven.com//tex/?c=bricks&t=brown_brick_02>
+None
+2020-05-02 12:26:02 [scrapy.core.scraper] DEBUG: Scraped from <200 https://texturehaven.com//tex/?c=bricks&t=red_bricks_02>
+None
+2020-05-02 12:26:02 [scrapy.core.scraper] DEBUG: Scraped from <200 https://texturehaven.com//tex/?c=bricks&t=red_brick_plaster_patch_02>
+None
+2020-05-02 12:26:02 [scrapy.core.scraper] DEBUG: Scraped from <200 https://texturehaven.com//tex/?c=bricks&t=castle_brick_02_white>
+None
+2020-05-02 12:26:02 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://texturehaven.com//tex/?c=floor&t=cobblestone_05> (referer: https://texturehaven.com//textures/?c=floor)
+2020-05-02 12:26:02 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://texturehaven.com//textures/?c=roofing> (referer: https://texturehaven.com/textures/)
+2020-05-02 12:26:02 [scrapy.pipelines.files] DEBUG: File (uptodate): Downloaded image from <GET https://texturehaven.com//files/tex_images/thumbnails/b56887b75a175f2b80af556c9012bb87_350_90.jpg> referred in <None>
+2020-05-02 12:26:02 [scrapy.pipelines.files] DEBUG: File (uptodate): Downloaded image from <GET https://texturehaven.com//files/tex_images/thumbnails/886e6349d541e0334c65773412e83c7b_350_90.jpg> referred in <None>
+2020-05-02 12:26:02 [scrapy.pipelines.files] DEBUG: File (uptodate): Downloaded image from <GET https://texturehaven.com//files/tex_images/thumbnails/93deb3eb3ecda032d44e65d1efc134ee_150_85.jpg> referred in <None>
+2020-05-02 12:26:02 [scrapy.pipelines.files] DEBUG: File (uptodate): Downloaded image from <GET https://texturehaven.com//files/tex_images/thumbnails/9dc1007d89a1ab12b34a15a64360aa4e_350_90.jpg> referred in <None>
+2020-05-02 12:26:02 [scrapy.pipelines.files] DEBUG: File (uptodate): Downloaded image from <GET https://texturehaven.com//files/tex_images/thumbnails/a0b8d2f12dbbf567e40a7f710316836d_350_90.jpg> referred in <None>
+2020-05-02 12:26:02 [scrapy.pipelines.files] DEBUG: File (uptodate): Downloaded image from <GET https://texturehaven.com//files/tex_images/thumbnails/d7cae2b11fabaf07b6627ed6c8312905_350_90.jpg> referred in <None>
+2020-05-02 12:26:03 [scrapy.core.scraper] DEBUG: Scraped from <200 https://texturehaven.com//tex/?c=floor&t=cobblestone_floor_02>
+None
+2020-05-02 12:26:03 [scrapy.core.scraper] DEBUG: Scraped from <200 https://texturehaven.com//tex/?c=floor&t=cobblestone_floor_05>
+None
+2020-05-02 12:26:03 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://texturehaven.com//tex/?c=terrain&t=snow_05> (referer: https://texturehaven.com//textures/?c=terrain)
+2020-05-02 12:26:03 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://texturehaven.com//tex/?c=terrain&t=pebble_ground_01> (referer: https://texturehaven.com//textures/?c=terrain)
+2020-05-02 12:26:03 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://texturehaven.com//tex/?c=sandstone&t=medieval_blocks_02> (referer: https://texturehaven.com//textures/?c=sandstone)
+2020-05-02 12:26:03 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://texturehaven.com//tex/?c=sandstone&t=white_sandstone_bricks> (referer: https://texturehaven.com//textures/?c=sandstone)
+2020-05-02 12:26:03 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://texturehaven.com//tex/?c=sandstone&t=white_sandstone_blocks_02> (referer: https://texturehaven.com//textures/?c=sandstone)
+2020-05-02 12:26:03 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://texturehaven.com//tex/?c=sandstone&t=sandstone_blocks_04> (referer: https://texturehaven.com//textures/?c=sandstone)
+2020-05-02 12:26:03 [scrapy.core.scraper] DEBUG: Scraped from <200 https://texturehaven.com//tex/?c=terrain&t=snow_04>
+None
+2020-05-02 12:26:04 [scrapy.core.scraper] DEBUG: Scraped from <200 https://texturehaven.com//tex/?c=terrain&t=snow_03>
+None
+2020-05-02 12:26:04 [scrapy.core.scraper] DEBUG: Scraped from <200 https://texturehaven.com//tex/?c=floor&t=cobblestone_05>
+None
+2020-05-02 12:26:04 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://texturehaven.com//tex/?c=terrain&t=forrest_sand_01> (referer: https://texturehaven.com//textures/?c=terrain)
+2020-05-02 12:26:04 [scrapy.pipelines.files] DEBUG: File (uptodate): Downloaded image from <GET https://texturehaven.com//files/tex_images/thumbnails/00857dd7da3d72ebeaa0afbc4db171f5_350_90.jpg> referred in <None>
+2020-05-02 12:26:04 [scrapy.pipelines.files] DEBUG: File (uptodate): Downloaded image from <GET https://texturehaven.com//files/tex_images/thumbnails/ff7deda074a2eae329a3b681912fa946_350_90.jpg> referred in <None>
+2020-05-02 12:26:04 [scrapy.pipelines.files] DEBUG: File (uptodate): Downloaded image from <GET https://texturehaven.com//files/tex_images/thumbnails/98d9674e4ec28c59ee0de7032f2511ee_150_85.jpg> referred in <None>
+2020-05-02 12:26:04 [scrapy.pipelines.files] DEBUG: File (uptodate): Downloaded image from <GET https://texturehaven.com//files/tex_images/thumbnails/5a4e66e6c8fe78c547f934c3c244ae6d_350_90.jpg> referred in <None>
+2020-05-02 12:26:04 [scrapy.pipelines.files] DEBUG: File (uptodate): Downloaded image from <GET https://texturehaven.com//files/tex_images/thumbnails/3b578e52ca2b2e4a09742e80919625ad_350_90.jpg> referred in <None>
+2020-05-02 12:26:04 [scrapy.pipelines.files] DEBUG: File (uptodate): Downloaded image from <GET https://texturehaven.com//files/tex_images/thumbnails/8d3bd4e304c19d1980b8829033e4682b_350_90.jpg> referred in <None>
+2020-05-02 12:26:04 [scrapy.pipelines.files] DEBUG: File (uptodate): Downloaded image from <GET https://texturehaven.com//files/tex_images/thumbnails/a75627f325ba61ba3635a22481823bdb_350_90.jpg> referred in <None>
+2020-05-02 12:26:04 [scrapy.pipelines.files] DEBUG: File (uptodate): Downloaded image from <GET https://texturehaven.com//files/tex_images/thumbnails/296a2790b27d6019c088406d28b17e69_350_90.jpg> referred in <None>
+2020-05-02 12:26:04 [scrapy.core.scraper] DEBUG: Scraped from <200 https://texturehaven.com//tex/?c=terrain&t=snow_05>
+None
+2020-05-02 12:26:04 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://texturehaven.com//tex/?c=sandstone&t=white_sandstone_bricks_03> (referer: https://texturehaven.com//textures/?c=sandstone)
+2020-05-02 12:26:04 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://texturehaven.com//tex/?c=sandstone&t=medieval_blocks_03> (referer: https://texturehaven.com//textures/?c=sandstone)
+2020-05-02 12:26:04 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://texturehaven.com//tex/?c=sandstone&t=sandstone_blocks_08> (referer: https://texturehaven.com//textures/?c=sandstone)
+2020-05-02 12:26:05 [scrapy.core.scraper] DEBUG: Scraped from <200 https://texturehaven.com//tex/?c=terrain&t=pebble_ground_01>
+None
+2020-05-02 12:26:05 [scrapy.core.scraper] DEBUG: Scraped from <200 https://texturehaven.com//tex/?c=sandstone&t=medieval_blocks_02>
+None
+2020-05-02 12:26:05 [scrapy.core.scraper] DEBUG: Scraped from <200 https://texturehaven.com//tex/?c=sandstone&t=white_sandstone_bricks>
+None
+2020-05-02 12:26:06 [scrapy.core.scraper] DEBUG: Scraped from <200 https://texturehaven.com//tex/?c=sandstone&t=white_sandstone_blocks_02>
+None
+2020-05-02 12:26:06 [scrapy.core.scraper] DEBUG: Scraped from <200 https://texturehaven.com//tex/?c=sandstone&t=sandstone_blocks_04>
+None
+2020-05-02 12:26:06 [scrapy.core.scraper] DEBUG: Scraped from <200 https://texturehaven.com//tex/?c=terrain&t=forrest_sand_01>
+None
+2020-05-02 12:26:06 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://texturehaven.com//tex/?c=sandstone&t=sandstone_blocks_05> (referer: https://texturehaven.com//textures/?c=sandstone)
+2020-05-02 12:26:06 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://texturehaven.com//tex/?c=sandstone&t=medieval_wall_01> (referer: https://texturehaven.com//textures/?c=sandstone)
+2020-05-02 12:26:06 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://texturehaven.com//tex/?c=sandstone&t=sandstone_cracks> (referer: https://texturehaven.com//textures/?c=sandstone)
+2020-05-02 12:26:06 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://texturehaven.com//tex/?c=sandstone&t=medieval_blocks_06> (referer: https://texturehaven.com//textures/?c=sandstone)
+2020-05-02 12:26:06 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://texturehaven.com//textures/?c=rock> (referer: https://texturehaven.com/textures/)
+2020-05-02 12:26:06 [scrapy.pipelines.files] DEBUG: File (uptodate): Downloaded image from <GET https://texturehaven.com//files/tex_images/thumbnails/acd64193acede9b3ff2be74a22e48a36_350_90.jpg> referred in <None>
+2020-05-02 12:26:06 [scrapy.pipelines.files] DEBUG: File (uptodate): Downloaded image from <GET https://texturehaven.com//files/tex_images/thumbnails/1f8ab2adadcaf7b4c9dd4386b2adb309_350_90.jpg> referred in <None>
+2020-05-02 12:26:06 [scrapy.pipelines.files] DEBUG: File (uptodate): Downloaded image from <GET https://texturehaven.com//files/tex_images/thumbnails/79f98b0c4f47eb6733b3b56a8f9aa2d9_350_90.jpg> referred in <None>
+2020-05-02 12:26:06 [scrapy.pipelines.files] DEBUG: File (uptodate): Downloaded image from <GET https://texturehaven.com//files/tex_images/thumbnails/a12140f3563649f87856a389c9aa7b2e_350_90.jpg> referred in <None>
+2020-05-02 12:26:06 [scrapy.pipelines.files] DEBUG: File (uptodate): Downloaded image from <GET https://texturehaven.com//files/tex_images/thumbnails/1c31afb2c2da7ecebe43aa34a3e032d0_350_90.jpg> referred in <None>
+2020-05-02 12:26:06 [scrapy.pipelines.files] DEBUG: File (uptodate): Downloaded image from <GET https://texturehaven.com//files/tex_images/thumbnails/689ff65a12e4fc85cd8c8f34e426878a_350_90.jpg> referred in <None>
+2020-05-02 12:26:06 [scrapy.pipelines.files] DEBUG: File (uptodate): Downloaded image from <GET https://texturehaven.com//files/tex_images/thumbnails/9e5043b0794e68e434067c680080f4d0_350_90.jpg> referred in <None>
+2020-05-02 12:26:07 [scrapy.core.scraper] DEBUG: Scraped from <200 https://texturehaven.com//tex/?c=sandstone&t=white_sandstone_bricks_03>
+None
+2020-05-02 12:26:07 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://texturehaven.com//tex/?c=roofing&t=roof_07> (referer: https://texturehaven.com//textures/?c=roofing)
+2020-05-02 12:26:07 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://texturehaven.com//tex/?c=roofing&t=grey_roof_tiles> (referer: https://texturehaven.com//textures/?c=roofing)
+2020-05-02 12:26:07 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://texturehaven.com//tex/?c=roofing&t=red_slate_roof_tiles_01> (referer: https://texturehaven.com//textures/?c=roofing)
+2020-05-02 12:26:07 [scrapy.core.scraper] DEBUG: Scraped from <200 https://texturehaven.com//tex/?c=sandstone&t=medieval_blocks_03>
+None
+2020-05-02 12:26:07 [scrapy.core.scraper] DEBUG: Scraped from <200 https://texturehaven.com//tex/?c=sandstone&t=sandstone_blocks_08>
+None
+2020-05-02 12:26:08 [scrapy.core.scraper] DEBUG: Scraped from <200 https://texturehaven.com//tex/?c=sandstone&t=sandstone_blocks_05>
+None
+2020-05-02 12:26:08 [scrapy.core.scraper] DEBUG: Scraped from <200 https://texturehaven.com//tex/?c=sandstone&t=medieval_wall_01>
+None
+2020-05-02 12:26:09 [scrapy.core.scraper] DEBUG: Scraped from <200 https://texturehaven.com//tex/?c=sandstone&t=sandstone_cracks>
+None
+2020-05-02 12:26:09 [scrapy.core.scraper] DEBUG: Scraped from <200 https://texturehaven.com//tex/?c=sandstone&t=medieval_blocks_06>
+None
+2020-05-02 12:26:09 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://texturehaven.com//tex/?c=sandstone&t=medieval_blocks_05> (referer: https://texturehaven.com//textures/?c=sandstone)
+2020-05-02 12:26:09 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://texturehaven.com//tex/?c=roofing&t=roof_3> (referer: https://texturehaven.com//textures/?c=roofing)
+2020-05-02 12:26:09 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://texturehaven.com//tex/?c=roofing&t=roof_tiles_14> (referer: https://texturehaven.com//textures/?c=roofing)
+2020-05-02 12:26:09 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://texturehaven.com//tex/?c=roofing&t=riet_01> (referer: https://texturehaven.com//textures/?c=roofing)
+2020-05-02 12:26:09 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://texturehaven.com//tex/?c=roofing&t=reed_roof_04> (referer: https://texturehaven.com//textures/?c=roofing)
+2020-05-02 12:26:09 [scrapy.pipelines.files] DEBUG: File (uptodate): Downloaded image from <GET https://texturehaven.com//files/tex_images/thumbnails/a0b5a0d706ef174d061899079df979a1_150_85.jpg> referred in <None>
+2020-05-02 12:26:09 [scrapy.pipelines.files] DEBUG: File (uptodate): Downloaded image from <GET https://texturehaven.com//files/tex_images/thumbnails/d13d956730e837b03375dbb62517f5e9_350_90.jpg> referred in <None>
+2020-05-02 12:26:09 [scrapy.pipelines.files] DEBUG: File (uptodate): Downloaded image from <GET https://texturehaven.com//files/tex_images/thumbnails/7a10d32d18d04db01d65da83f56973ff_350_90.jpg> referred in <None>
+2020-05-02 12:26:09 [scrapy.pipelines.files] DEBUG: File (uptodate): Downloaded image from <GET https://texturehaven.com//files/tex_images/thumbnails/e3594a4c2b9404e6cf051319ec97b0ac_350_90.jpg> referred in <None>
+2020-05-02 12:26:09 [scrapy.pipelines.files] DEBUG: File (uptodate): Downloaded image from <GET https://texturehaven.com//files/tex_images/thumbnails/ef57cd57c4da5aea3a3757ef756e8a8c_350_90.jpg> referred in <None>
+2020-05-02 12:26:09 [scrapy.pipelines.files] DEBUG: File (uptodate): Downloaded image from <GET https://texturehaven.com//files/tex_images/thumbnails/af1114640abce4e553022928e666404b_350_90.jpg> referred in <None>
+2020-05-02 12:26:09 [scrapy.pipelines.files] DEBUG: File (uptodate): Downloaded image from <GET https://texturehaven.com//files/tex_images/thumbnails/1e9699826c952894494bd85d2a6c2e69_350_90.jpg> referred in <None>
+2020-05-02 12:26:09 [scrapy.pipelines.files] DEBUG: File (uptodate): Downloaded image from <GET https://texturehaven.com//files/tex_images/thumbnails/2c3912e154c7488706f90b7eb471b1e5_350_90.jpg> referred in <None>
+2020-05-02 12:26:09 [scrapy.pipelines.files] DEBUG: File (uptodate): Downloaded image from <GET https://texturehaven.com//files/tex_images/thumbnails/43fa9f240f3244ec260af360467216ea_350_90.jpg> referred in <None>
+2020-05-02 12:26:09 [scrapy.core.scraper] DEBUG: Scraped from <200 https://texturehaven.com//tex/?c=roofing&t=roof_07>
+None
+2020-05-02 12:26:09 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://texturehaven.com//tex/?c=roofing&t=grey_roof_01> (referer: https://texturehaven.com//textures/?c=roofing)
+2020-05-02 12:26:09 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://texturehaven.com//tex/?c=roofing&t=reed_roof_03> (referer: https://texturehaven.com//textures/?c=roofing)
+2020-05-02 12:26:09 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://texturehaven.com//tex/?c=roofing&t=grey_roof_tiles_02> (referer: https://texturehaven.com//textures/?c=roofing)
+2020-05-02 12:26:09 [scrapy.core.scraper] DEBUG: Scraped from <200 https://texturehaven.com//tex/?c=roofing&t=grey_roof_tiles>
+None
+2020-05-02 12:26:10 [scrapy.core.scraper] DEBUG: Scraped from <200 https://texturehaven.com//tex/?c=roofing&t=red_slate_roof_tiles_01>
+None
+2020-05-02 12:26:10 [scrapy.core.scraper] DEBUG: Scraped from <200 https://texturehaven.com//tex/?c=sandstone&t=medieval_blocks_05>
+None
+2020-05-02 12:26:10 [scrapy.core.scraper] DEBUG: Scraped from <200 https://texturehaven.com//tex/?c=roofing&t=roof_3>
+None
+2020-05-02 12:26:11 [scrapy.core.scraper] DEBUG: Scraped from <200 https://texturehaven.com//tex/?c=roofing&t=roof_tiles_14>
+None
+2020-05-02 12:26:11 [scrapy.core.scraper] DEBUG: Scraped from <200 https://texturehaven.com//tex/?c=roofing&t=riet_01>
+None
+2020-05-02 12:26:11 [scrapy.core.scraper] DEBUG: Scraped from <200 https://texturehaven.com//tex/?c=roofing&t=reed_roof_04>
+None
+2020-05-02 12:26:11 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://texturehaven.com//tex/?c=roofing&t=roof_09> (referer: https://texturehaven.com//textures/?c=roofing)
+2020-05-02 12:26:11 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://texturehaven.com//tex/?c=roofing&t=roof_slates_02> (referer: https://texturehaven.com//textures/?c=roofing)
+2020-05-02 12:26:11 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://texturehaven.com//tex/?c=roofing&t=roof_slates_03> (referer: https://texturehaven.com//textures/?c=roofing)
+2020-05-02 12:26:11 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://texturehaven.com//tex/?c=roofing&t=ceramic_roof_01> (referer: https://texturehaven.com//textures/?c=roofing)
+2020-05-02 12:26:11 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://texturehaven.com//tex/?c=plaster&t=rough_plaster_brick_02> (referer: https://texturehaven.com//textures/?c=plaster)
+2020-05-02 12:26:11 [scrapy.pipelines.files] DEBUG: File (uptodate): Downloaded image from <GET https://texturehaven.com//files/tex_images/thumbnails/c594a7caa6cb5dbd9591d7384ebe6a9f_350_90.jpg> referred in <None>
+2020-05-02 12:26:11 [scrapy.pipelines.files] DEBUG: File (uptodate): Downloaded image from <GET https://texturehaven.com//files/tex_images/thumbnails/742787568a1f5d88038ab27adc1f209c_350_90.jpg> referred in <None>
+2020-05-02 12:26:11 [scrapy.pipelines.files] DEBUG: File (uptodate): Downloaded image from <GET https://texturehaven.com//files/tex_images/thumbnails/075eca45011d57291bbbce504f610bc9_350_90.jpg> referred in <None>
+2020-05-02 12:26:11 [scrapy.pipelines.files] DEBUG: File (uptodate): Downloaded image from <GET https://texturehaven.com//files/tex_images/thumbnails/306ccca61f3b677ee4f773b4579687be_350_90.jpg> referred in <None>
+2020-05-02 12:26:11 [scrapy.pipelines.files] DEBUG: File (uptodate): Downloaded image from <GET https://texturehaven.com//files/tex_images/thumbnails/9d048698dbc5cb2ef351990a37e77bcf_350_90.jpg> referred in <None>
+2020-05-02 12:26:11 [scrapy.pipelines.files] DEBUG: File (uptodate): Downloaded image from <GET https://texturehaven.com//files/tex_images/thumbnails/87df4e3a1b2993d016ca8320a264f314_350_90.jpg> referred in <None>
+2020-05-02 12:26:11 [scrapy.pipelines.files] DEBUG: File (uptodate): Downloaded image from <GET https://texturehaven.com//files/tex_images/thumbnails/a0b5a0d706ef174d061899079df979a1_350_90.jpg> referred in <None>
+2020-05-02 12:26:11 [scrapy.pipelines.files] DEBUG: File (uptodate): Downloaded image from <GET https://texturehaven.com//files/tex_images/thumbnails/64d4303790c74433e5843cb95b351e74_150_85.jpg> referred in <None>
+2020-05-02 12:26:11 [scrapy.pipelines.files] DEBUG: File (uptodate): Downloaded image from <GET https://texturehaven.com//files/tex_images/thumbnails/be1ff3489d48e2123c47129122f37f16_350_90.jpg> referred in <None>
+2020-05-02 12:26:12 [scrapy.core.scraper] DEBUG: Scraped from <200 https://texturehaven.com//tex/?c=roofing&t=grey_roof_01>
+None
+2020-05-02 12:26:12 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://texturehaven.com//tex/?c=rock&t=rock_01> (referer: https://texturehaven.com//textures/?c=rock)
+2020-05-02 12:26:12 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://texturehaven.com//tex/?c=rock&t=rock_05> (referer: https://texturehaven.com//textures/?c=rock)
+2020-05-02 12:26:12 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://texturehaven.com//tex/?c=rock&t=rock_06> (referer: https://texturehaven.com//textures/?c=rock)
+2020-05-02 12:26:12 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://texturehaven.com//tex/?c=rock&t=rock_2> (referer: https://texturehaven.com//textures/?c=rock)
+2020-05-02 12:26:12 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://texturehaven.com//tex/?c=rock&t=rock_08> (referer: https://texturehaven.com//textures/?c=rock)
+2020-05-02 12:26:12 [scrapy.core.scraper] DEBUG: Scraped from <200 https://texturehaven.com//tex/?c=roofing&t=reed_roof_03>
+None
+2020-05-02 12:26:12 [scrapy.core.scraper] DEBUG: Scraped from <200 https://texturehaven.com//tex/?c=roofing&t=grey_roof_tiles_02>
+None
+2020-05-02 12:26:13 [scrapy.core.scraper] DEBUG: Scraped from <200 https://texturehaven.com//tex/?c=roofing&t=roof_09>
+None
+2020-05-02 12:26:13 [scrapy.core.scraper] DEBUG: Scraped from <200 https://texturehaven.com//tex/?c=roofing&t=roof_slates_02>
+None
+2020-05-02 12:26:13 [scrapy.core.scraper] DEBUG: Scraped from <200 https://texturehaven.com//tex/?c=roofing&t=roof_slates_03>
+None
+2020-05-02 12:26:13 [scrapy.core.scraper] DEBUG: Scraped from <200 https://texturehaven.com//tex/?c=roofing&t=ceramic_roof_01>
+None
+2020-05-02 12:26:14 [scrapy.core.scraper] DEBUG: Scraped from <200 https://texturehaven.com//tex/?c=plaster&t=rough_plaster_brick_02>
+None
+2020-05-02 12:26:14 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://texturehaven.com//tex/?c=rock&t=castle_wall_varriation> (referer: https://texturehaven.com//textures/?c=rock)
+2020-05-02 12:26:14 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://texturehaven.com//tex/?c=rock&t=rock_3> (referer: https://texturehaven.com//textures/?c=rock)
+2020-05-02 12:26:14 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://texturehaven.com//tex/?c=rock&t=rock_04> (referer: https://texturehaven.com//textures/?c=rock)
+2020-05-02 12:26:14 [scrapy.pipelines.files] DEBUG: File (uptodate): Downloaded image from <GET https://texturehaven.com//files/tex_images/thumbnails/0061dbabcee00d75c6df210c8bd6df77_150_85.jpg> referred in <None>
+2020-05-02 12:26:14 [scrapy.pipelines.files] DEBUG: File (uptodate): Downloaded image from <GET https://texturehaven.com//files/tex_images/thumbnails/05078ad52a5500eaad71d405186669be_350_90.jpg> referred in <None>
+2020-05-02 12:26:14 [scrapy.pipelines.files] DEBUG: File (uptodate): Downloaded image from <GET https://texturehaven.com//files/tex_images/thumbnails/1dcb1da3b715d3502ef551298269c63d_350_90.jpg> referred in <None>
+2020-05-02 12:26:14 [scrapy.pipelines.files] DEBUG: File (uptodate): Downloaded image from <GET https://texturehaven.com//files/tex_images/thumbnails/d97cc469f2b203c73b78df9f9865c5d6_350_90.jpg> referred in <None>
+2020-05-02 12:26:14 [scrapy.pipelines.files] DEBUG: File (uptodate): Downloaded image from <GET https://texturehaven.com//files/tex_images/thumbnails/9c6226fd875a08b5a5d3b17e33fab39a_350_90.jpg> referred in <None>
+2020-05-02 12:26:14 [scrapy.pipelines.files] DEBUG: File (uptodate): Downloaded image from <GET https://texturehaven.com//files/tex_images/thumbnails/db93aabe605427d397fd0a0fd9428acf_350_90.jpg> referred in <None>
+2020-05-02 12:26:14 [scrapy.pipelines.files] DEBUG: File (uptodate): Downloaded image from <GET https://texturehaven.com//files/tex_images/thumbnails/da182d81094f1b63f1af753981d8f754_350_90.jpg> referred in <None>
+2020-05-02 12:26:14 [scrapy.pipelines.files] DEBUG: File (uptodate): Downloaded image from <GET https://texturehaven.com//files/tex_images/thumbnails/1ee4c2249cf62248dc2c29b9969f781e_350_90.jpg> referred in <None>
+2020-05-02 12:26:14 [scrapy.pipelines.files] DEBUG: File (uptodate): Downloaded image from <GET https://texturehaven.com//files/tex_images/thumbnails/3383a11debf71c50419177e7d55bc25f_350_90.jpg> referred in <None>
+2020-05-02 12:26:14 [scrapy.core.scraper] DEBUG: Scraped from <200 https://texturehaven.com//tex/?c=rock&t=rock_01>
+None
+2020-05-02 12:26:14 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://texturehaven.com//tex/?c=plaster&t=rough_plaster_broken> (referer: https://texturehaven.com//textures/?c=plaster)
+2020-05-02 12:26:14 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://texturehaven.com//tex/?c=plaster&t=rough_plaster_brick> (referer: https://texturehaven.com//textures/?c=plaster)
+2020-05-02 12:26:14 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://texturehaven.com//tex/?c=plaster&t=white_plaster_rough_02> (referer: https://texturehaven.com//textures/?c=plaster)
+2020-05-02 12:26:14 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://texturehaven.com//tex/?c=plaster&t=white_plaster_rough_01> (referer: https://texturehaven.com//textures/?c=plaster)
+2020-05-02 12:26:14 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://texturehaven.com//tex/?c=plaster&t=wall_bricks_plaster> (referer: https://texturehaven.com//textures/?c=plaster)
+2020-05-02 12:26:14 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://texturehaven.com//tex/?c=plaster&t=white_rough_plaster> (referer: https://texturehaven.com//textures/?c=plaster)
+2020-05-02 12:26:14 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://texturehaven.com//tex/?c=plaster&t=yellow_plaster> (referer: https://texturehaven.com//textures/?c=plaster)
+2020-05-02 12:26:14 [scrapy.core.scraper] DEBUG: Scraped from <200 https://texturehaven.com//tex/?c=rock&t=rock_05>
+None
+2020-05-02 12:26:15 [scrapy.core.scraper] DEBUG: Scraped from <200 https://texturehaven.com//tex/?c=rock&t=rock_06>
+None
+2020-05-02 12:26:15 [scrapy.core.scraper] DEBUG: Scraped from <200 https://texturehaven.com//tex/?c=rock&t=rock_2>
+None
+2020-05-02 12:26:15 [scrapy.core.scraper] DEBUG: Scraped from <200 https://texturehaven.com//tex/?c=rock&t=rock_08>
+None
+2020-05-02 12:26:15 [scrapy.core.scraper] DEBUG: Scraped from <200 https://texturehaven.com//tex/?c=rock&t=castle_wall_varriation>
+None
+2020-05-02 12:26:16 [scrapy.core.scraper] DEBUG: Scraped from <200 https://texturehaven.com//tex/?c=rock&t=rock_3>
+None
+2020-05-02 12:26:16 [scrapy.core.scraper] DEBUG: Scraped from <200 https://texturehaven.com//tex/?c=rock&t=rock_04>
+None
+2020-05-02 12:26:16 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://texturehaven.com//tex/?c=rock&t=castle_wall_slates> (referer: https://texturehaven.com//textures/?c=rock)
+2020-05-02 12:26:16 [scrapy.pipelines.files] DEBUG: File (uptodate): Downloaded image from <GET https://texturehaven.com//files/tex_images/thumbnails/b1ca6b9bbe4f42ae6e163ac6c09f4aa5_350_90.jpg> referred in <None>
+2020-05-02 12:26:16 [scrapy.pipelines.files] DEBUG: File (uptodate): Downloaded image from <GET https://texturehaven.com//files/tex_images/thumbnails/4b365ac292810075a550f5578d792c27_350_90.jpg> referred in <None>
+2020-05-02 12:26:16 [scrapy.pipelines.files] DEBUG: File (uptodate): Downloaded image from <GET https://texturehaven.com//files/tex_images/thumbnails/52b92aa4ad96d001f7f08497a2c94939_350_90.jpg> referred in <None>
+2020-05-02 12:26:16 [scrapy.pipelines.files] DEBUG: File (uptodate): Downloaded image from <GET https://texturehaven.com//files/tex_images/thumbnails/2da416ff01d2f5c4ba9460028f7cf75d_350_90.jpg> referred in <None>
+2020-05-02 12:26:16 [scrapy.pipelines.files] DEBUG: File (uptodate): Downloaded image from <GET https://texturehaven.com//files/tex_images/thumbnails/5d88900d8c865a1496972cdef53b751f_350_90.jpg> referred in <None>
+2020-05-02 12:26:16 [scrapy.pipelines.files] DEBUG: File (uptodate): Downloaded image from <GET https://texturehaven.com//files/tex_images/thumbnails/63e8091c8fc1e1775b53e5ac8128776d_350_90.jpg> referred in <None>
+2020-05-02 12:26:16 [scrapy.pipelines.files] DEBUG: File (uptodate): Downloaded image from <GET https://texturehaven.com//files/tex_images/thumbnails/ecc8c10990fd25e422f1c31b6882fc6f_350_90.jpg> referred in <None>
+2020-05-02 12:26:16 [scrapy.pipelines.files] DEBUG: File (uptodate): Downloaded image from <GET https://texturehaven.com//files/tex_images/thumbnails/0061dbabcee00d75c6df210c8bd6df77_350_90.jpg> referred in <None>
+2020-05-02 12:26:17 [scrapy.core.scraper] DEBUG: Scraped from <200 https://texturehaven.com//tex/?c=plaster&t=rough_plaster_broken>
+None
+2020-05-02 12:26:17 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://texturehaven.com//tex/?c=plaster&t=rough_plaster_brick_04> (referer: https://texturehaven.com//textures/?c=plaster)
+2020-05-02 12:26:17 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://texturehaven.com//tex/?c=plaster&t=grey_plaster_02> (referer: https://texturehaven.com//textures/?c=plaster)
+2020-05-02 12:26:17 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://texturehaven.com//tex/?c=plaster&t=rough_plaster_03> (referer: https://texturehaven.com//textures/?c=plaster)
+2020-05-02 12:26:17 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://texturehaven.com//tex/?c=plaster&t=plaster_grey_04> (referer: https://texturehaven.com//textures/?c=plaster)
+2020-05-02 12:26:17 [scrapy.core.scraper] DEBUG: Scraped from <200 https://texturehaven.com//tex/?c=plaster&t=rough_plaster_brick>
+None
+2020-05-02 12:26:17 [scrapy.core.scraper] DEBUG: Scraped from <200 https://texturehaven.com//tex/?c=plaster&t=white_plaster_rough_01>
+None
+2020-05-02 12:26:18 [scrapy.core.scraper] DEBUG: Scraped from <200 https://texturehaven.com//tex/?c=plaster&t=white_plaster_rough_02>
+None
+2020-05-02 12:26:18 [scrapy.core.scraper] DEBUG: Scraped from <200 https://texturehaven.com//tex/?c=plaster&t=wall_bricks_plaster>
+None
+2020-05-02 12:26:18 [scrapy.core.scraper] DEBUG: Scraped from <200 https://texturehaven.com//tex/?c=plaster&t=white_rough_plaster>
+None
+2020-05-02 12:26:18 [scrapy.core.scraper] DEBUG: Scraped from <200 https://texturehaven.com//tex/?c=plaster&t=yellow_plaster>
+None
+2020-05-02 12:26:19 [scrapy.core.scraper] DEBUG: Scraped from <200 https://texturehaven.com//tex/?c=rock&t=castle_wall_slates>
+None
+2020-05-02 12:26:19 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://texturehaven.com//tex/?c=plaster&t=grey_plaster_03> (referer: https://texturehaven.com//textures/?c=plaster)
+2020-05-02 12:26:19 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://texturehaven.com//tex/?c=plaster&t=grey_plaster> (referer: https://texturehaven.com//textures/?c=plaster)
+2020-05-02 12:26:19 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://texturehaven.com//tex/?c=plaster&t=white_plaster_03> (referer: https://texturehaven.com//textures/?c=plaster)
+2020-05-02 12:26:19 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://texturehaven.com//tex/?c=plaster&t=white_plaster_02> (referer: https://texturehaven.com//textures/?c=plaster)
+2020-05-02 12:26:19 [scrapy.pipelines.files] DEBUG: File (uptodate): Downloaded image from <GET https://texturehaven.com//files/tex_images/thumbnails/64d4303790c74433e5843cb95b351e74_350_90.jpg> referred in <None>
+2020-05-02 12:26:19 [scrapy.pipelines.files] DEBUG: File (uptodate): Downloaded image from <GET https://texturehaven.com//files/tex_images/thumbnails/4df399dedd4251dc2b7cfe56f91199d8_350_90.jpg> referred in <None>
+2020-05-02 12:26:19 [scrapy.pipelines.files] DEBUG: File (uptodate): Downloaded image from <GET https://texturehaven.com//files/tex_images/thumbnails/2687e514d39b3a3e1d633483002c9e65_350_90.jpg> referred in <None>
+2020-05-02 12:26:19 [scrapy.pipelines.files] DEBUG: File (uptodate): Downloaded image from <GET https://texturehaven.com//files/tex_images/thumbnails/50fd7c1c9be561a73624fa3d96649a65_350_90.jpg> referred in <None>
+2020-05-02 12:26:19 [scrapy.pipelines.files] DEBUG: File (uptodate): Downloaded image from <GET https://texturehaven.com//files/tex_images/thumbnails/01f749f230b8411616884d757160f4f4_350_90.jpg> referred in <None>
+2020-05-02 12:26:19 [scrapy.pipelines.files] DEBUG: File (uptodate): Downloaded image from <GET https://texturehaven.com//files/tex_images/thumbnails/c00effa26f2176efa90f5bdb4ebd81c1_350_90.jpg> referred in <None>
+2020-05-02 12:26:19 [scrapy.pipelines.files] DEBUG: File (uptodate): Downloaded image from <GET https://texturehaven.com//files/tex_images/thumbnails/bc286e0823ec8b598cee149272a44790_350_90.jpg> referred in <None>
+2020-05-02 12:26:19 [scrapy.pipelines.files] DEBUG: File (uptodate): Downloaded image from <GET https://texturehaven.com//files/tex_images/thumbnails/33a022164d93b4632a29420204a4fab7_350_90.jpg> referred in <None>
+2020-05-02 12:26:19 [scrapy.core.scraper] DEBUG: Scraped from <200 https://texturehaven.com//tex/?c=plaster&t=rough_plaster_brick_04>
+None
+2020-05-02 12:26:19 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://texturehaven.com//tex/?c=sandstone&t=large_sandstone_blocks_01> (referer: https://texturehaven.com//textures/?c=sandstone)
+2020-05-02 12:26:19 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://texturehaven.com//tex/?c=terrain&t=brown_mud_03> (referer: https://texturehaven.com//textures/?c=terrain)
+2020-05-02 12:26:19 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://texturehaven.com//tex/?c=terrain&t=grass_path_3> (referer: https://texturehaven.com//textures/?c=terrain)
+2020-05-02 12:26:19 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://texturehaven.com//tex/?c=terrain&t=brown_mud_02> (referer: https://texturehaven.com//textures/?c=terrain)
+2020-05-02 12:26:19 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://texturehaven.com//tex/?c=terrain&t=coral_mud_01> (referer: https://texturehaven.com//textures/?c=terrain)
+2020-05-02 12:26:19 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://texturehaven.com//tex/?c=terrain&t=terrain_red_01> (referer: https://texturehaven.com//textures/?c=terrain)
+2020-05-02 12:26:20 [scrapy.core.scraper] DEBUG: Scraped from <200 https://texturehaven.com//tex/?c=plaster&t=grey_plaster_02>
+None
+2020-05-02 12:26:20 [scrapy.core.scraper] DEBUG: Scraped from <200 https://texturehaven.com//tex/?c=plaster&t=rough_plaster_03>
+None
+2020-05-02 12:26:20 [scrapy.core.scraper] DEBUG: Scraped from <200 https://texturehaven.com//tex/?c=plaster&t=plaster_grey_04>
+None
+2020-05-02 12:26:20 [scrapy.core.scraper] DEBUG: Scraped from <200 https://texturehaven.com//tex/?c=plaster&t=grey_plaster_03>
+None
+2020-05-02 12:26:21 [scrapy.core.scraper] DEBUG: Scraped from <200 https://texturehaven.com//tex/?c=plaster&t=grey_plaster>
+None
+2020-05-02 12:26:21 [scrapy.core.scraper] DEBUG: Scraped from <200 https://texturehaven.com//tex/?c=plaster&t=white_plaster_03>
+None
+2020-05-02 12:26:21 [scrapy.core.scraper] DEBUG: Scraped from <200 https://texturehaven.com//tex/?c=plaster&t=white_plaster_02>
+None
+2020-05-02 12:26:21 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://texturehaven.com//tex/?c=terrain&t=blue_floor_tiles_01> (referer: https://texturehaven.com//textures/?c=terrain)
+2020-05-02 12:26:21 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://texturehaven.com//tex/?c=terrain&t=forrest_ground_03> (referer: https://texturehaven.com//textures/?c=terrain)
+2020-05-02 12:26:21 [scrapy.pipelines.files] DEBUG: File (uptodate): Downloaded image from <GET https://texturehaven.com//files/tex_images/thumbnails/98d9674e4ec28c59ee0de7032f2511ee_350_90.jpg> referred in <None>
+2020-05-02 12:26:21 [scrapy.pipelines.files] DEBUG: File (uptodate): Downloaded image from <GET https://texturehaven.com//files/tex_images/thumbnails/ccdfb5ea2318c86d90abe2a20d9757c6_350_90.jpg> referred in <None>
+2020-05-02 12:26:21 [scrapy.pipelines.files] DEBUG: File (uptodate): Downloaded image from <GET https://texturehaven.com//files/tex_images/thumbnails/1a5a55ddcbcec32f9acddbf8d9d46f07_350_90.jpg> referred in <None>
+2020-05-02 12:26:21 [scrapy.pipelines.files] DEBUG: File (uptodate): Downloaded image from <GET https://texturehaven.com//files/tex_images/thumbnails/46c1b1c4256bb361c830604df518a0f8_350_90.jpg> referred in <None>
+2020-05-02 12:26:21 [scrapy.pipelines.files] DEBUG: File (uptodate): Downloaded image from <GET https://texturehaven.com//files/tex_images/thumbnails/b76e52aa2dd12051286f184fbd3b7287_350_90.jpg> referred in <None>
+2020-05-02 12:26:21 [scrapy.pipelines.files] DEBUG: File (uptodate): Downloaded image from <GET https://texturehaven.com//files/tex_images/thumbnails/02854229e9ba1459c9343d154e718bb4_350_90.jpg> referred in <None>
+2020-05-02 12:26:21 [scrapy.pipelines.files] DEBUG: File (uptodate): Downloaded image from <GET https://texturehaven.com//files/tex_images/thumbnails/b727669c367f66f11bc58058080d741d_350_90.jpg> referred in <None>
+2020-05-02 12:26:21 [scrapy.pipelines.files] DEBUG: File (uptodate): Downloaded image from <GET https://texturehaven.com//files/tex_images/thumbnails/51af5b8b957e99f1254cb8bb8d230a4b_350_90.jpg> referred in <None>
+2020-05-02 12:26:21 [scrapy.core.scraper] DEBUG: Scraped from <200 https://texturehaven.com//tex/?c=sandstone&t=large_sandstone_blocks_01>
+None
+2020-05-02 12:26:21 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://texturehaven.com//tex/?c=terrain&t=brown_mud> (referer: https://texturehaven.com//textures/?c=terrain)
+2020-05-02 12:26:22 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://texturehaven.com//tex/?c=terrain&t=burned_ground_01> (referer: https://texturehaven.com//textures/?c=terrain)
+2020-05-02 12:26:22 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://texturehaven.com//tex/?c=terrain&t=shell_floor_01> (referer: https://texturehaven.com//textures/?c=terrain)
+2020-05-02 12:26:22 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://texturehaven.com//tex/?c=terrain&t=brown_mud_rocks_01> (referer: https://texturehaven.com//textures/?c=terrain)
+2020-05-02 12:26:22 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://texturehaven.com//tex/?c=terrain&t=snow_01> (referer: https://texturehaven.com//textures/?c=terrain)
+2020-05-02 12:26:22 [scrapy.core.scraper] DEBUG: Scraped from <200 https://texturehaven.com//tex/?c=terrain&t=brown_mud_03>
+None
+2020-05-02 12:26:22 [scrapy.core.scraper] DEBUG: Scraped from <200 https://texturehaven.com//tex/?c=terrain&t=grass_path_3>
+None
+2020-05-02 12:26:22 [scrapy.core.scraper] DEBUG: Scraped from <200 https://texturehaven.com//tex/?c=terrain&t=brown_mud_02>
+None
+2020-05-02 12:26:23 [scrapy.core.scraper] DEBUG: Scraped from <200 https://texturehaven.com//tex/?c=terrain&t=coral_mud_01>
+None
+2020-05-02 12:26:23 [scrapy.core.scraper] DEBUG: Scraped from <200 https://texturehaven.com//tex/?c=terrain&t=terrain_red_01>
+None
+2020-05-02 12:26:23 [scrapy.core.scraper] DEBUG: Scraped from <200 https://texturehaven.com//tex/?c=terrain&t=blue_floor_tiles_01>
+None
+2020-05-02 12:26:23 [scrapy.core.scraper] DEBUG: Scraped from <200 https://texturehaven.com//tex/?c=terrain&t=forrest_ground_03>
+None
+2020-05-02 12:26:23 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://texturehaven.com//tex/?c=terrain&t=red_dirt_mud_01> (referer: https://texturehaven.com//textures/?c=terrain)
+2020-05-02 12:26:23 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://texturehaven.com//tex/?c=terrain&t=red_mud_stones> (referer: https://texturehaven.com//textures/?c=terrain)
+2020-05-02 12:26:23 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://texturehaven.com//tex/?c=terrain&t=grass_path_2> (referer: https://texturehaven.com//textures/?c=terrain)
+2020-05-02 12:26:23 [scrapy.pipelines.files] DEBUG: File (uptodate): Downloaded image from <GET https://texturehaven.com//files/tex_images/thumbnails/e85e594f875640e1f0ccd31e15c2852b_350_90.jpg> referred in <None>
+2020-05-02 12:26:24 [scrapy.pipelines.files] DEBUG: File (uptodate): Downloaded image from <GET https://texturehaven.com//files/tex_images/thumbnails/8d0157d8aa70e0a486da64cbcfdbe148_350_90.jpg> referred in <None>
+2020-05-02 12:26:24 [scrapy.pipelines.files] DEBUG: File (uptodate): Downloaded image from <GET https://texturehaven.com//files/tex_images/thumbnails/9826c79733ddfe28b6ee4a8468f7edff_350_90.jpg> referred in <None>
+2020-05-02 12:26:24 [scrapy.pipelines.files] DEBUG: File (uptodate): Downloaded image from <GET https://texturehaven.com//files/tex_images/thumbnails/2205ac198f86f8d3a2546423844c07de_350_90.jpg> referred in <None>
+2020-05-02 12:26:24 [scrapy.pipelines.files] DEBUG: File (uptodate): Downloaded image from <GET https://texturehaven.com//files/tex_images/thumbnails/17cb0bac6ef0dae5f32396ff10e0f387_350_90.jpg> referred in <None>
+2020-05-02 12:26:24 [scrapy.pipelines.files] DEBUG: File (uptodate): Downloaded image from <GET https://texturehaven.com//files/tex_images/thumbnails/a522a2e588fd2d80971db839de38b541_350_90.jpg> referred in <None>
+2020-05-02 12:26:24 [scrapy.pipelines.files] DEBUG: File (uptodate): Downloaded image from <GET https://texturehaven.com//files/tex_images/thumbnails/14014d18f467efb8e1b6ca9faf8d16e3_350_90.jpg> referred in <None>
+2020-05-02 12:26:24 [scrapy.pipelines.files] DEBUG: File (uptodate): Downloaded image from <GET https://texturehaven.com//files/tex_images/thumbnails/915cfecc8c89ca0ed5e49ff7b07a574c_350_90.jpg> referred in <None>
+2020-05-02 12:26:24 [scrapy.core.scraper] DEBUG: Scraped from <200 https://texturehaven.com//tex/?c=terrain&t=brown_mud>
+None
+2020-05-02 12:26:24 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://texturehaven.com//tex/?c=terrain&t=aerial_sand> (referer: https://texturehaven.com//textures/?c=terrain)
+2020-05-02 12:26:24 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://texturehaven.com//tex/?c=terrain&t=cobblestone_large_01> (referer: https://texturehaven.com//textures/?c=terrain)
+2020-05-02 12:26:24 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://texturehaven.com//tex/?c=terrain&t=cobblestone_floor_01> (referer: https://texturehaven.com//textures/?c=terrain)
+2020-05-02 12:26:24 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://texturehaven.com//tex/?c=terrain&t=brown_mud_dry> (referer: https://texturehaven.com//textures/?c=terrain)
+2020-05-02 12:26:24 [scrapy.core.scraper] DEBUG: Scraped from <200 https://texturehaven.com//tex/?c=terrain&t=burned_ground_01>
+None
+2020-05-02 12:26:24 [scrapy.core.scraper] DEBUG: Scraped from <200 https://texturehaven.com//tex/?c=terrain&t=shell_floor_01>
+None
+2020-05-02 12:26:25 [scrapy.core.scraper] DEBUG: Scraped from <200 https://texturehaven.com//tex/?c=terrain&t=brown_mud_rocks_01>
+None
+2020-05-02 12:26:25 [scrapy.core.scraper] DEBUG: Scraped from <200 https://texturehaven.com//tex/?c=terrain&t=snow_01>
+None
+2020-05-02 12:26:25 [scrapy.core.scraper] DEBUG: Scraped from <200 https://texturehaven.com//tex/?c=terrain&t=red_dirt_mud_01>
+None
+2020-05-02 12:26:25 [scrapy.core.scraper] DEBUG: Scraped from <200 https://texturehaven.com//tex/?c=terrain&t=red_mud_stones>
+None
+2020-05-02 12:26:26 [scrapy.core.scraper] DEBUG: Scraped from <200 https://texturehaven.com//tex/?c=terrain&t=grass_path_2>
+None
+2020-05-02 12:26:26 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://texturehaven.com//tex/?c=terrain&t=coral_ground_02> (referer: https://texturehaven.com//textures/?c=terrain)
+2020-05-02 12:26:26 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://texturehaven.com//tex/?c=terrain&t=dirt_aerial_03> (referer: https://texturehaven.com//textures/?c=terrain)
+2020-05-02 12:26:26 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://texturehaven.com//tex/?c=terrain&t=sand_01> (referer: https://texturehaven.com//textures/?c=terrain)
+2020-05-02 12:26:26 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://texturehaven.com//tex/?c=terrain&t=snow_02> (referer: https://texturehaven.com//textures/?c=terrain)
+2020-05-02 12:26:26 [scrapy.pipelines.files] DEBUG: File (uptodate): Downloaded image from <GET https://texturehaven.com//files/tex_images/thumbnails/c22340b301e8829a174779e750da6110_350_90.jpg> referred in <None>
+2020-05-02 12:26:26 [scrapy.pipelines.files] DEBUG: File (uptodate): Downloaded image from <GET https://texturehaven.com//files/tex_images/thumbnails/5ab2e739be0b7a3c5d6310c434993864_350_90.jpg> referred in <None>
+2020-05-02 12:26:26 [scrapy.pipelines.files] DEBUG: File (uptodate): Downloaded image from <GET https://texturehaven.com//files/tex_images/thumbnails/1f1bf300c614eb34abc11aa4c5e1ff11_350_90.jpg> referred in <None>
+2020-05-02 12:26:26 [scrapy.pipelines.files] DEBUG: File (uptodate): Downloaded image from <GET https://texturehaven.com//files/tex_images/thumbnails/fc57a70a12f2e3dc611bd13217297559_350_90.jpg> referred in <None>
+2020-05-02 12:26:26 [scrapy.pipelines.files] DEBUG: File (uptodate): Downloaded image from <GET https://texturehaven.com//files/tex_images/thumbnails/05bafcd305e16db1623e424f51425c79_350_90.jpg> referred in <None>
+2020-05-02 12:26:26 [scrapy.pipelines.files] DEBUG: File (uptodate): Downloaded image from <GET https://texturehaven.com//files/tex_images/thumbnails/f3be75b2e210f18cd5ec1726487b99ff_350_90.jpg> referred in <None>
+2020-05-02 12:26:26 [scrapy.pipelines.files] DEBUG: File (uptodate): Downloaded image from <GET https://texturehaven.com//files/tex_images/thumbnails/e972e5c8541e13e3ee03830529245bdf_350_90.jpg> referred in <None>
+2020-05-02 12:26:26 [scrapy.pipelines.files] DEBUG: File (uptodate): Downloaded image from <GET https://texturehaven.com//files/tex_images/thumbnails/590748fd69daa668a1ef666c186bbfa9_350_90.jpg> referred in <None>
+2020-05-02 12:26:26 [scrapy.core.scraper] DEBUG: Scraped from <200 https://texturehaven.com//tex/?c=terrain&t=aerial_sand>
+None
+2020-05-02 12:26:26 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://texturehaven.com//tex/?c=terrain&t=aerial_ground_rock> (referer: https://texturehaven.com//textures/?c=terrain)
+2020-05-02 12:26:26 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://texturehaven.com//tex/?c=terrain&t=dry_ground_01> (referer: https://texturehaven.com//textures/?c=terrain)
+2020-05-02 12:26:26 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://texturehaven.com//tex/?c=terrain&t=dirt_aerial_02> (referer: https://texturehaven.com//textures/?c=terrain)
+2020-05-02 12:26:26 [scrapy.core.scraper] DEBUG: Scraped from <200 https://texturehaven.com//tex/?c=terrain&t=cobblestone_large_01>
+None
+2020-05-02 12:26:27 [scrapy.core.scraper] DEBUG: Scraped from <200 https://texturehaven.com//tex/?c=terrain&t=cobblestone_floor_01>
+None
+2020-05-02 12:26:27 [scrapy.core.scraper] DEBUG: Scraped from <200 https://texturehaven.com//tex/?c=terrain&t=brown_mud_dry>
+None
+2020-05-02 12:26:27 [scrapy.core.scraper] DEBUG: Scraped from <200 https://texturehaven.com//tex/?c=terrain&t=coral_ground_02>
+None
+2020-05-02 12:26:28 [scrapy.core.scraper] DEBUG: Scraped from <200 https://texturehaven.com//tex/?c=terrain&t=dirt_aerial_03>
+None
+2020-05-02 12:26:28 [scrapy.core.scraper] DEBUG: Scraped from <200 https://texturehaven.com//tex/?c=terrain&t=sand_01>
+None
+2020-05-02 12:26:28 [scrapy.core.scraper] DEBUG: Scraped from <200 https://texturehaven.com//tex/?c=terrain&t=snow_02>
+None
+2020-05-02 12:26:28 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://texturehaven.com//tex/?c=terrain&t=forrest_ground_01> (referer: https://texturehaven.com//textures/?c=terrain)
+2020-05-02 12:26:28 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://texturehaven.com//tex/?c=terrain&t=dry_ground_rocks> (referer: https://texturehaven.com//textures/?c=terrain)
+2020-05-02 12:26:28 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://texturehaven.com//tex/?c=terrain&t=brown_mud_leaves_01> (referer: https://texturehaven.com//textures/?c=terrain)
+2020-05-02 12:26:28 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://texturehaven.com//tex/?c=terrain&t=ground_grey> (referer: https://texturehaven.com//textures/?c=terrain)
+2020-05-02 12:26:28 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://texturehaven.com//tex/?c=terrain&t=coral_gravel> (referer: https://texturehaven.com//textures/?c=terrain)
+2020-05-02 12:26:28 [scrapy.pipelines.files] DEBUG: File (uptodate): Downloaded image from <GET https://texturehaven.com//files/tex_images/thumbnails/76a9e1d043f56fc33f3e131b22d907cf_350_90.jpg> referred in <None>
+2020-05-02 12:26:28 [scrapy.pipelines.files] DEBUG: File (uptodate): Downloaded image from <GET https://texturehaven.com//files/tex_images/thumbnails/c2601c6edae4222c075c5408fe2f9eb5_350_90.jpg> referred in <None>
+2020-05-02 12:26:28 [scrapy.pipelines.files] DEBUG: File (uptodate): Downloaded image from <GET https://texturehaven.com//files/tex_images/thumbnails/eaff59433fb426e37db0048482d41680_350_90.jpg> referred in <None>
+2020-05-02 12:26:28 [scrapy.pipelines.files] DEBUG: File (uptodate): Downloaded image from <GET https://texturehaven.com//files/tex_images/thumbnails/b6c863ff5bd34693749660bb83e1bda7_350_90.jpg> referred in <None>
+2020-05-02 12:26:28 [scrapy.pipelines.files] DEBUG: File (uptodate): Downloaded image from <GET https://texturehaven.com//files/tex_images/thumbnails/bd625c3d96a538f54d4b14e6a3ff5175_350_90.jpg> referred in <None>
+2020-05-02 12:26:28 [scrapy.pipelines.files] DEBUG: File (uptodate): Downloaded image from <GET https://texturehaven.com//files/tex_images/thumbnails/f3c146dd20fae42d2f306c054b4a4348_350_90.jpg> referred in <None>
+2020-05-02 12:26:29 [scrapy.core.scraper] DEBUG: Scraped from <200 https://texturehaven.com//tex/?c=terrain&t=aerial_ground_rock>
+None
+2020-05-02 12:26:29 [scrapy.core.scraper] DEBUG: Scraped from <200 https://texturehaven.com//tex/?c=terrain&t=dry_ground_01>
+None
+2020-05-02 12:26:29 [scrapy.core.scraper] DEBUG: Scraped from <200 https://texturehaven.com//tex/?c=terrain&t=dirt_aerial_02>
+None
+2020-05-02 12:26:29 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://texturehaven.com//tex/?c=terrain&t=rock_ground_02> (referer: https://texturehaven.com//textures/?c=terrain)
+2020-05-02 12:26:29 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://texturehaven.com//tex/?c=metal&t=rusty_metal> (referer: https://texturehaven.com//textures/?c=metal)
+2020-05-02 12:26:29 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://texturehaven.com//tex/?c=metal&t=factory_wall> (referer: https://texturehaven.com//textures/?c=metal)
+2020-05-02 12:26:29 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://texturehaven.com//tex/?c=metal&t=green_metal_rust> (referer: https://texturehaven.com//textures/?c=metal)
+2020-05-02 12:26:29 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://texturehaven.com//tex/?c=terrain&t=rock_ground> (referer: https://texturehaven.com//textures/?c=terrain)
+2020-05-02 12:26:29 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://texturehaven.com//tex/?c=terrain&t=aerial_grass_rock> (referer: https://texturehaven.com//textures/?c=terrain)
+2020-05-02 12:26:29 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://texturehaven.com//tex/?c=metal&t=metal_plate> (referer: https://texturehaven.com//textures/?c=metal)
+2020-05-02 12:26:29 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://texturehaven.com//tex/?c=metal&t=rusty_metal_02> (referer: https://texturehaven.com//textures/?c=metal)
+2020-05-02 12:26:29 [scrapy.pipelines.files] DEBUG: File (uptodate): Downloaded image from <GET https://texturehaven.com//files/tex_images/thumbnails/c1d60b3b1225244b95bcf8a2e637cb5e_350_90.jpg> referred in <None>
+2020-05-02 12:26:29 [scrapy.pipelines.files] DEBUG: File (uptodate): Downloaded image from <GET https://texturehaven.com//files/tex_images/thumbnails/a1341e7c47648b49ea94fee9be5d62ab_350_90.jpg> referred in <None>
+2020-05-02 12:26:30 [scrapy.core.scraper] DEBUG: Scraped from <200 https://texturehaven.com//tex/?c=terrain&t=forrest_ground_01>
+None
+2020-05-02 12:26:30 [scrapy.core.scraper] DEBUG: Scraped from <200 https://texturehaven.com//tex/?c=terrain&t=dry_ground_rocks>
+None
+2020-05-02 12:26:30 [scrapy.core.scraper] DEBUG: Scraped from <200 https://texturehaven.com//tex/?c=terrain&t=brown_mud_leaves_01>
+None
+2020-05-02 12:26:31 [scrapy.core.scraper] DEBUG: Scraped from <200 https://texturehaven.com//tex/?c=terrain&t=ground_grey>
+None
+2020-05-02 12:26:31 [scrapy.core.scraper] DEBUG: Scraped from <200 https://texturehaven.com//tex/?c=terrain&t=coral_gravel>
+None
+2020-05-02 12:26:31 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://texturehaven.com//tex/?c=concrete&t=concrete> (referer: https://texturehaven.com//textures/?c=concrete)
+2020-05-02 12:26:31 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://texturehaven.com//tex/?c=concrete&t=concrete_floor_01> (referer: https://texturehaven.com//textures/?c=concrete)
+2020-05-02 12:26:31 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://texturehaven.com//tex/?c=concrete&t=concrete_floor_02> (referer: https://texturehaven.com//textures/?c=concrete)
+2020-05-02 12:26:31 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://texturehaven.com//tex/?c=concrete&t=concrete_floor_painted> (referer: https://texturehaven.com//textures/?c=concrete)
+2020-05-02 12:26:31 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://texturehaven.com//tex/?c=floor&t=cobblestone_floor_03> (referer: https://texturehaven.com//textures/?c=floor)
+2020-05-02 12:26:31 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://texturehaven.com//tex/?c=floor&t=floor_klinkers_04> (referer: https://texturehaven.com//textures/?c=floor)
+2020-05-02 12:26:31 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://texturehaven.com//tex/?c=floor&t=cobblestone_square> (referer: https://texturehaven.com//textures/?c=floor)
+2020-05-02 12:26:31 [scrapy.pipelines.files] DEBUG: File (uptodate): Downloaded image from <GET https://texturehaven.com//files/tex_images/thumbnails/407370b5a5f6940d0b63f2a7087ef1af_350_90.jpg> referred in <None>
+2020-05-02 12:26:31 [scrapy.pipelines.files] DEBUG: File (uptodate): Downloaded image from <GET https://texturehaven.com//files/tex_images/thumbnails/1f26361ce8c6aaa40a0f91c18e86523c_150_85.jpg> referred in <None>
+2020-05-02 12:26:31 [scrapy.pipelines.files] DEBUG: File (uptodate): Downloaded image from <GET https://texturehaven.com//files/tex_images/thumbnails/1f67e3420e9f6bb892d7edc1505928af_350_90.jpg> referred in <None>
+2020-05-02 12:26:31 [scrapy.pipelines.files] DEBUG: File (uptodate): Downloaded image from <GET https://texturehaven.com//files/tex_images/thumbnails/a741f247c2055d1a2c1210f2f5e22a70_350_90.jpg> referred in <None>
+2020-05-02 12:26:31 [scrapy.pipelines.files] DEBUG: File (uptodate): Downloaded image from <GET https://texturehaven.com//files/tex_images/thumbnails/3479479fef17f18faf56ba054fdef1d6_350_90.jpg> referred in <None>
+2020-05-02 12:26:31 [scrapy.pipelines.files] DEBUG: File (uptodate): Downloaded image from <GET https://texturehaven.com//files/tex_images/thumbnails/a194e4831c6e42e827ec2a9a841c108f_350_90.jpg> referred in <None>
+2020-05-02 12:26:31 [scrapy.pipelines.files] DEBUG: File (uptodate): Downloaded image from <GET https://texturehaven.com//files/tex_images/thumbnails/93deb3eb3ecda032d44e65d1efc134ee_350_90.jpg> referred in <None>
+2020-05-02 12:26:31 [scrapy.pipelines.files] DEBUG: File (uptodate): Downloaded image from <GET https://texturehaven.com//files/tex_images/thumbnails/afbf0fb91caa4da89dbb434aa6ee8937_350_90.jpg> referred in <None>
+2020-05-02 12:26:31 [scrapy.pipelines.files] DEBUG: File (uptodate): Downloaded image from <GET https://texturehaven.com//files/tex_images/thumbnails/1f26361ce8c6aaa40a0f91c18e86523c_350_90.jpg> referred in <None>
+2020-05-02 12:26:31 [scrapy.pipelines.files] DEBUG: File (uptodate): Downloaded image from <GET https://texturehaven.com//files/tex_images/thumbnails/8df0b566b602e28753936d8b6439c6ec_150_85.jpg> referred in <None>
+2020-05-02 12:26:31 [scrapy.pipelines.files] DEBUG: File (uptodate): Downloaded image from <GET https://texturehaven.com//files/tex_images/thumbnails/9645aa2b3bbdc9b83184c3b936e1d3f3_350_90.jpg> referred in <None>
+2020-05-02 12:26:31 [scrapy.pipelines.files] DEBUG: File (uptodate): Downloaded image from <GET https://texturehaven.com//files/tex_images/thumbnails/64d27f1ff7ad362f3f2a3915a407fad7_350_90.jpg> referred in <None>
+2020-05-02 12:26:31 [scrapy.pipelines.files] DEBUG: File (uptodate): Downloaded image from <GET https://texturehaven.com//files/tex_images/thumbnails/908217dc12de7984ddf9fe0d868e3bd0_350_90.jpg> referred in <None>
+2020-05-02 12:26:31 [scrapy.pipelines.files] DEBUG: File (uptodate): Downloaded image from <GET https://texturehaven.com//files/tex_images/thumbnails/8df0b566b602e28753936d8b6439c6ec_350_90.jpg> referred in <None>
+2020-05-02 12:26:31 [scrapy.pipelines.files] DEBUG: File (uptodate): Downloaded image from <GET https://texturehaven.com//files/tex_images/thumbnails/4f79c159c69de0d9a286e9488cb4fe80_350_90.jpg> referred in <None>
+2020-05-02 12:26:31 [scrapy.pipelines.files] DEBUG: File (uptodate): Downloaded image from <GET https://texturehaven.com//files/tex_images/thumbnails/bd24d4505039870e4b1d01162b671226_350_90.jpg> referred in <None>
+2020-05-02 12:26:31 [scrapy.pipelines.files] DEBUG: File (uptodate): Downloaded image from <GET https://texturehaven.com//files/tex_images/thumbnails/fdd2520610f2992ccbab2042a7d12cc9_350_90.jpg> referred in <None>
+2020-05-02 12:26:32 [scrapy.core.scraper] DEBUG: Scraped from <200 https://texturehaven.com//tex/?c=terrain&t=rock_ground_02>
+None
+2020-05-02 12:26:32 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://texturehaven.com//tex/?c=floor&t=cobblestone_floor_13> (referer: https://texturehaven.com//textures/?c=floor)
+2020-05-02 12:26:32 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://texturehaven.com//tex/?c=floor&t=cobblestone_01> (referer: https://texturehaven.com//textures/?c=floor)
+2020-05-02 12:26:32 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://texturehaven.com//tex/?c=floor&t=floor_bricks_02> (referer: https://texturehaven.com//textures/?c=floor)
+2020-05-02 12:26:32 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://texturehaven.com//tex/?c=floor&t=floor_pattern_01> (referer: https://texturehaven.com//textures/?c=floor)
+2020-05-02 12:26:32 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://texturehaven.com//tex/?c=floor&t=floor_tiles_09> (referer: https://texturehaven.com//textures/?c=floor)
+2020-05-02 12:26:32 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://texturehaven.com//tex/?c=floor&t=brick_floor> (referer: https://texturehaven.com//textures/?c=floor)
+2020-05-02 12:26:32 [scrapy.core.scraper] DEBUG: Scraped from <200 https://texturehaven.com//tex/?c=metal&t=rusty_metal>
+None
+2020-05-02 12:26:32 [scrapy.core.scraper] DEBUG: Scraped from <200 https://texturehaven.com//tex/?c=metal&t=factory_wall>
+None
+2020-05-02 12:26:32 [scrapy.core.scraper] DEBUG: Scraped from <200 https://texturehaven.com//tex/?c=metal&t=green_metal_rust>
+None
+2020-05-02 12:26:33 [scrapy.core.scraper] DEBUG: Scraped from <200 https://texturehaven.com//tex/?c=terrain&t=rock_ground>
+None
+2020-05-02 12:26:33 [scrapy.core.scraper] DEBUG: Scraped from <200 https://texturehaven.com//tex/?c=terrain&t=aerial_grass_rock>
+None
+2020-05-02 12:26:33 [scrapy.core.scraper] DEBUG: Scraped from <200 https://texturehaven.com//tex/?c=metal&t=metal_plate>
+None
+2020-05-02 12:26:33 [scrapy.core.scraper] DEBUG: Scraped from <200 https://texturehaven.com//tex/?c=metal&t=rusty_metal_02>
+None
+2020-05-02 12:26:34 [scrapy.core.scraper] DEBUG: Scraped from <200 https://texturehaven.com//tex/?c=concrete&t=concrete>
+None
+2020-05-02 12:26:34 [scrapy.core.scraper] DEBUG: Scraped from <200 https://texturehaven.com//tex/?c=concrete&t=concrete_floor_01>
+None
+2020-05-02 12:26:34 [scrapy.core.scraper] DEBUG: Scraped from <200 https://texturehaven.com//tex/?c=concrete&t=concrete_floor_02>
+None
+2020-05-02 12:26:35 [scrapy.core.scraper] DEBUG: Scraped from <200 https://texturehaven.com//tex/?c=concrete&t=concrete_floor_painted>
+None
+2020-05-02 12:26:35 [scrapy.core.scraper] DEBUG: Scraped from <200 https://texturehaven.com//tex/?c=floor&t=cobblestone_floor_03>
+None
+2020-05-02 12:26:35 [scrapy.core.scraper] DEBUG: Scraped from <200 https://texturehaven.com//tex/?c=floor&t=floor_klinkers_04>
+None
+2020-05-02 12:26:35 [scrapy.core.scraper] DEBUG: Scraped from <200 https://texturehaven.com//tex/?c=floor&t=cobblestone_square>
+None
+2020-05-02 12:26:35 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://texturehaven.com//tex/?c=floor&t=cobblestone_color> (referer: https://texturehaven.com//textures/?c=floor)
+2020-05-02 12:26:35 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://texturehaven.com//tex/?c=floor&t=cobblestone_floor_07> (referer: https://texturehaven.com//textures/?c=floor)
+2020-05-02 12:26:35 [scrapy.pipelines.files] DEBUG: File (uptodate): Downloaded image from <GET https://texturehaven.com//files/tex_images/thumbnails/b19dac17e780e96597561f8fed8927ef_350_90.jpg> referred in <None>
+2020-05-02 12:26:35 [scrapy.pipelines.files] DEBUG: File (uptodate): Downloaded image from <GET https://texturehaven.com//files/tex_images/thumbnails/de68fcae9749a498222c35816e536526_350_90.jpg> referred in <None>
+2020-05-02 12:26:35 [scrapy.pipelines.files] DEBUG: File (uptodate): Downloaded image from <GET https://texturehaven.com//files/tex_images/thumbnails/4d572f1eebcd62c48ae204419299d49a_350_90.jpg> referred in <None>
+2020-05-02 12:26:35 [scrapy.pipelines.files] DEBUG: File (uptodate): Downloaded image from <GET https://texturehaven.com//files/tex_images/thumbnails/53082ceb748cad9c8eb644caed0b82a3_350_90.jpg> referred in <None>
+2020-05-02 12:26:35 [scrapy.pipelines.files] DEBUG: File (uptodate): Downloaded image from <GET https://texturehaven.com//files/tex_images/thumbnails/7f565786129dde431c7badc31c3ac987_350_90.jpg> referred in <None>
+2020-05-02 12:26:35 [scrapy.pipelines.files] DEBUG: File (uptodate): Downloaded image from <GET https://texturehaven.com//files/tex_images/thumbnails/448189dea8a71f3feabda628eb9a7786_350_90.jpg> referred in <None>
+2020-05-02 12:26:36 [scrapy.pipelines.files] DEBUG: File (uptodate): Downloaded image from <GET https://texturehaven.com//files/tex_images/thumbnails/cbf5debdcf0d105a77c11c76721b59ff_350_90.jpg> referred in <None>
+2020-05-02 12:26:36 [scrapy.pipelines.files] DEBUG: File (uptodate): Downloaded image from <GET https://texturehaven.com//files/tex_images/thumbnails/fbedee62983df1a0d43fc80bb8e4317a_350_90.jpg> referred in <None>
+2020-05-02 12:26:36 [scrapy.core.scraper] DEBUG: Scraped from <200 https://texturehaven.com//tex/?c=floor&t=cobblestone_floor_13>
+None
+2020-05-02 12:26:36 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://texturehaven.com//tex/?c=floor&t=floor_tiles_04> (referer: https://texturehaven.com//textures/?c=floor)
+2020-05-02 12:26:36 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://texturehaven.com//tex/?c=floor&t=square_floor_patern_01> (referer: https://texturehaven.com//textures/?c=floor)
+2020-05-02 12:26:36 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://texturehaven.com//tex/?c=floor&t=floor_pebbles> (referer: https://texturehaven.com//textures/?c=floor)
+2020-05-02 12:26:36 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://texturehaven.com//tex/?c=floor&t=pavement_01> (referer: https://texturehaven.com//textures/?c=floor)
+2020-05-02 12:26:36 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://texturehaven.com//tex/?c=floor&t=floor_tiles_08> (referer: https://texturehaven.com//textures/?c=floor)
+2020-05-02 12:26:36 [scrapy.core.scraper] DEBUG: Scraped from <200 https://texturehaven.com//tex/?c=floor&t=cobblestone_01>
+None
+2020-05-02 12:26:36 [scrapy.core.scraper] DEBUG: Scraped from <200 https://texturehaven.com//tex/?c=floor&t=floor_bricks_02>
+None
+2020-05-02 12:26:37 [scrapy.core.scraper] DEBUG: Scraped from <200 https://texturehaven.com//tex/?c=floor&t=floor_pattern_01>
+None
+2020-05-02 12:26:37 [scrapy.core.scraper] DEBUG: Scraped from <200 https://texturehaven.com//tex/?c=floor&t=floor_tiles_09>
+None
+2020-05-02 12:26:37 [scrapy.core.scraper] DEBUG: Scraped from <200 https://texturehaven.com//tex/?c=floor&t=brick_floor>
+None
+2020-05-02 12:26:37 [scrapy.core.scraper] DEBUG: Scraped from <200 https://texturehaven.com//tex/?c=floor&t=cobblestone_color>
+None
+2020-05-02 12:26:38 [scrapy.core.scraper] DEBUG: Scraped from <200 https://texturehaven.com//tex/?c=floor&t=cobblestone_floor_07>
+None
+2020-05-02 12:26:38 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://texturehaven.com//tex/?c=floor&t=floor_pattern_02> (referer: https://texturehaven.com//textures/?c=floor)
+2020-05-02 12:26:38 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://texturehaven.com//tex/?c=floor&t=cobblestone_floor_04> (referer: https://texturehaven.com//textures/?c=floor)
+2020-05-02 12:26:38 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://texturehaven.com//tex/?c=floor&t=floor_tiles_06> (referer: https://texturehaven.com//textures/?c=floor)
+2020-05-02 12:26:38 [scrapy.pipelines.files] DEBUG: File (uptodate): Downloaded image from <GET https://texturehaven.com//files/tex_images/thumbnails/e10058fac52d5534a09a11bf74171031_350_90.jpg> referred in <None>
+2020-05-02 12:26:38 [scrapy.pipelines.files] DEBUG: File (uptodate): Downloaded image from <GET https://texturehaven.com//files/tex_images/thumbnails/3e1d45375e9b98eaaba0b8790660e77a_350_90.jpg> referred in <None>
+2020-05-02 12:26:38 [scrapy.pipelines.files] DEBUG: File (uptodate): Downloaded image from <GET https://texturehaven.com//files/tex_images/thumbnails/c125e4e1f1e1fb4f0fe139efe7ef3380_350_90.jpg> referred in <None>
+2020-05-02 12:26:38 [scrapy.pipelines.files] DEBUG: File (uptodate): Downloaded image from <GET https://texturehaven.com//files/tex_images/thumbnails/19506b46d4f250b5dc7bdf2be8a1ba2b_350_90.jpg> referred in <None>
+2020-05-02 12:26:38 [scrapy.pipelines.files] DEBUG: File (uptodate): Downloaded image from <GET https://texturehaven.com//files/tex_images/thumbnails/b8e5a697675e4e2cb1f554793cac8baa_350_90.jpg> referred in <None>
+2020-05-02 12:26:38 [scrapy.pipelines.files] DEBUG: File (uptodate): Downloaded image from <GET https://texturehaven.com//files/tex_images/thumbnails/4f047be7b258c50b4d2bb2c9e2dc363e_350_90.jpg> referred in <None>
+2020-05-02 12:26:38 [scrapy.pipelines.files] DEBUG: File (uptodate): Downloaded image from <GET https://texturehaven.com//files/tex_images/thumbnails/32033fc9968a55624d6c8b4efadb95da_350_90.jpg> referred in <None>
+2020-05-02 12:26:38 [scrapy.pipelines.files] DEBUG: File (uptodate): Downloaded image from <GET https://texturehaven.com//files/tex_images/thumbnails/98df1ee1ae807cc9a86c53b69d5b0355_350_90.jpg> referred in <None>
+2020-05-02 12:26:38 [scrapy.core.scraper] DEBUG: Scraped from <200 https://texturehaven.com//tex/?c=floor&t=floor_tiles_04>
+None
+2020-05-02 12:26:38 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://texturehaven.com//tex/?c=floor&t=large_grey_tiles> (referer: https://texturehaven.com//textures/?c=floor)
+2020-05-02 12:26:38 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://texturehaven.com//tex/?c=floor&t=large_square_pattern_01> (referer: https://texturehaven.com//textures/?c=floor)
+2020-05-02 12:26:38 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://texturehaven.com//tex/?c=wood&t=medieval_wood> (referer: https://texturehaven.com//textures/?c=wood)
+2020-05-02 12:26:38 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://texturehaven.com//tex/?c=floor&t=marble_01> (referer: https://texturehaven.com//textures/?c=floor)
+2020-05-02 12:26:38 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://texturehaven.com//tex/?c=wood&t=wooden_rough_planks> (referer: https://texturehaven.com//textures/?c=wood)
+2020-05-02 12:26:38 [scrapy.core.scraper] DEBUG: Scraped from <200 https://texturehaven.com//tex/?c=floor&t=square_floor_patern_01>
+None
+2020-05-02 12:26:39 [scrapy.core.scraper] DEBUG: Scraped from <200 https://texturehaven.com//tex/?c=floor&t=floor_pebbles>
+None
+2020-05-02 12:26:39 [scrapy.core.scraper] DEBUG: Scraped from <200 https://texturehaven.com//tex/?c=floor&t=pavement_01>
+None
+2020-05-02 12:26:39 [scrapy.core.scraper] DEBUG: Scraped from <200 https://texturehaven.com//tex/?c=floor&t=floor_tiles_08>
+None
+2020-05-02 12:26:40 [scrapy.core.scraper] DEBUG: Scraped from <200 https://texturehaven.com//tex/?c=floor&t=floor_pattern_02>
+None
+2020-05-02 12:26:40 [scrapy.core.scraper] DEBUG: Scraped from <200 https://texturehaven.com//tex/?c=floor&t=cobblestone_floor_04>
+None
+2020-05-02 12:26:40 [scrapy.core.scraper] DEBUG: Scraped from <200 https://texturehaven.com//tex/?c=floor&t=floor_tiles_06>
+None
+2020-05-02 12:26:40 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://texturehaven.com//tex/?c=floor&t=large_floor_tiles_02> (referer: https://texturehaven.com//textures/?c=floor)
+2020-05-02 12:26:40 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://texturehaven.com//tex/?c=wood&t=dark_planks> (referer: https://texturehaven.com//textures/?c=wood)
+2020-05-02 12:26:40 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://texturehaven.com//tex/?c=floor&t=floor_tiles_02> (referer: https://texturehaven.com//textures/?c=floor)
+2020-05-02 12:26:40 [scrapy.pipelines.files] DEBUG: File (uptodate): Downloaded image from <GET https://texturehaven.com//files/tex_images/thumbnails/259489dc0bec295dd693a64c00ce6eff_350_90.jpg> referred in <None>
+2020-05-02 12:26:40 [scrapy.pipelines.files] DEBUG: File (uptodate): Downloaded image from <GET https://texturehaven.com//files/tex_images/thumbnails/48832736106f29bddf908430fe028d88_350_90.jpg> referred in <None>
+2020-05-02 12:26:40 [scrapy.pipelines.files] DEBUG: File (uptodate): Downloaded image from <GET https://texturehaven.com//files/tex_images/thumbnails/045e8d47fec9aa903a516088e8c47bfc_150_85.jpg> referred in <None>
+2020-05-02 12:26:40 [scrapy.pipelines.files] DEBUG: File (uptodate): Downloaded image from <GET https://texturehaven.com//files/tex_images/thumbnails/c3d94caca3f085c0dec1e26440c9aa04_350_90.jpg> referred in <None>
+2020-05-02 12:26:40 [scrapy.pipelines.files] DEBUG: File (uptodate): Downloaded image from <GET https://texturehaven.com//files/tex_images/thumbnails/2f3006108f872db12a4d5e26abf92169_350_90.jpg> referred in <None>
+2020-05-02 12:26:40 [scrapy.pipelines.files] DEBUG: File (uptodate): Downloaded image from <GET https://texturehaven.com//files/tex_images/thumbnails/73ae514ba155cff97e2515bb2abf443c_350_90.jpg> referred in <None>
+2020-05-02 12:26:40 [scrapy.pipelines.files] DEBUG: File (uptodate): Downloaded image from <GET https://texturehaven.com//files/tex_images/thumbnails/c536034990aca32ea9a60058cd850d3d_350_90.jpg> referred in <None>
+2020-05-02 12:26:40 [scrapy.pipelines.files] DEBUG: File (uptodate): Downloaded image from <GET https://texturehaven.com//files/tex_images/thumbnails/639624522b051235f89da2dd6bc73f41_350_90.jpg> referred in <None>
+2020-05-02 12:26:40 [scrapy.pipelines.files] DEBUG: File (uptodate): Downloaded image from <GET https://texturehaven.com//files/tex_images/thumbnails/f99d01ff429775b8e5850a957310bc36_350_90.jpg> referred in <None>
+2020-05-02 12:26:41 [scrapy.core.scraper] DEBUG: Scraped from <200 https://texturehaven.com//tex/?c=floor&t=large_grey_tiles>
+None
+2020-05-02 12:26:41 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://texturehaven.com//tex/?c=wood&t=moss_wood> (referer: https://texturehaven.com//textures/?c=wood)
+2020-05-02 12:26:41 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://texturehaven.com//tex/?c=wood&t=brown_planks_09> (referer: https://texturehaven.com//textures/?c=wood)
+2020-05-02 12:26:41 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://texturehaven.com//tex/?c=wood&t=brown_planks_07> (referer: https://texturehaven.com//textures/?c=wood)
+2020-05-02 12:26:41 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://texturehaven.com//tex/?c=wood&t=beam_wall_01> (referer: https://texturehaven.com//textures/?c=wood)
+2020-05-02 12:26:41 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://texturehaven.com//tex/?c=wood&t=brown_planks_04> (referer: https://texturehaven.com//textures/?c=wood)
+2020-05-02 12:26:41 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://texturehaven.com//tex/?c=wood&t=green_rough_planks> (referer: https://texturehaven.com//textures/?c=wood)
+2020-05-02 12:26:41 [scrapy.core.scraper] DEBUG: Scraped from <200 https://texturehaven.com//tex/?c=floor&t=large_square_pattern_01>
+None
+2020-05-02 12:26:41 [scrapy.core.scraper] DEBUG: Scraped from <200 https://texturehaven.com//tex/?c=wood&t=medieval_wood>
+None
+2020-05-02 12:26:42 [scrapy.core.scraper] DEBUG: Scraped from <200 https://texturehaven.com//tex/?c=wood&t=wooden_rough_planks>
+None
+2020-05-02 12:26:42 [scrapy.core.scraper] DEBUG: Scraped from <200 https://texturehaven.com//tex/?c=floor&t=marble_01>
+None
+2020-05-02 12:26:42 [scrapy.core.scraper] DEBUG: Scraped from <200 https://texturehaven.com//tex/?c=floor&t=large_floor_tiles_02>
+None
+2020-05-02 12:26:43 [scrapy.core.scraper] DEBUG: Scraped from <200 https://texturehaven.com//tex/?c=wood&t=dark_planks>
+None
+2020-05-02 12:26:43 [scrapy.core.scraper] DEBUG: Scraped from <200 https://texturehaven.com//tex/?c=floor&t=floor_tiles_02>
+None
+2020-05-02 12:26:43 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://texturehaven.com//tex/?c=wood&t=blue_painted_planks> (referer: https://texturehaven.com//textures/?c=wood)
+2020-05-02 12:26:43 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://texturehaven.com//tex/?c=wood&t=brown_planks_08> (referer: https://texturehaven.com//textures/?c=wood)
+2020-05-02 12:26:43 [scrapy.pipelines.files] DEBUG: File (uptodate): Downloaded image from <GET https://texturehaven.com//files/tex_images/thumbnails/799a43701d6f7bd05635f87e0544ef93_350_90.jpg> referred in <None>
+2020-05-02 12:26:43 [scrapy.pipelines.files] DEBUG: File (uptodate): Downloaded image from <GET https://texturehaven.com//files/tex_images/thumbnails/fd46ace9a092f1258786959ee81aeb49_350_90.jpg> referred in <None>
+2020-05-02 12:26:43 [scrapy.pipelines.files] DEBUG: File (uptodate): Downloaded image from <GET https://texturehaven.com//files/tex_images/thumbnails/973c47211a97fe7e73fce14d4e359fb2_350_90.jpg> referred in <None>
+2020-05-02 12:26:43 [scrapy.pipelines.files] DEBUG: File (uptodate): Downloaded image from <GET https://texturehaven.com//files/tex_images/thumbnails/6d1ae540266f72db290a6f1730e6ba01_350_90.jpg> referred in <None>
+2020-05-02 12:26:43 [scrapy.pipelines.files] DEBUG: File (uptodate): Downloaded image from <GET https://texturehaven.com//files/tex_images/thumbnails/97499dccde31c0aff8e6a536ae1235eb_350_90.jpg> referred in <None>
+2020-05-02 12:26:43 [scrapy.pipelines.files] DEBUG: File (uptodate): Downloaded image from <GET https://texturehaven.com//files/tex_images/thumbnails/304825cd0cb5cb47559bce6887c21a3d_350_90.jpg> referred in <None>
+2020-05-02 12:26:43 [scrapy.pipelines.files] DEBUG: File (uptodate): Downloaded image from <GET https://texturehaven.com//files/tex_images/thumbnails/a38b99c0a925723083308821d68bd1b0_350_90.jpg> referred in <None>
+2020-05-02 12:26:43 [scrapy.pipelines.files] DEBUG: File (uptodate): Downloaded image from <GET https://texturehaven.com//files/tex_images/thumbnails/28e11fd5409556369b00f0d01a373d4f_350_90.jpg> referred in <None>
+2020-05-02 12:26:43 [scrapy.core.scraper] DEBUG: Scraped from <200 https://texturehaven.com//tex/?c=wood&t=moss_wood>
+None
+2020-05-02 12:26:43 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://texturehaven.com//tex/?c=wood&t=tree_bark_03> (referer: https://texturehaven.com//textures/?c=wood)
+2020-05-02 12:26:43 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://texturehaven.com//tex/?c=wood&t=bark_brown_02> (referer: https://texturehaven.com//textures/?c=wood)
+2020-05-02 12:26:43 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://texturehaven.com//tex/?c=wood&t=old_planks_02> (referer: https://texturehaven.com//textures/?c=wood)
+2020-05-02 12:26:43 [scrapy.core.scraper] DEBUG: Scraped from <200 https://texturehaven.com//tex/?c=wood&t=brown_planks_09>
+None
+2020-05-02 12:26:44 [scrapy.core.scraper] DEBUG: Scraped from <200 https://texturehaven.com//tex/?c=wood&t=brown_planks_07>
+None
+2020-05-02 12:26:44 [scrapy.core.scraper] DEBUG: Scraped from <200 https://texturehaven.com//tex/?c=wood&t=brown_planks_04>
+None
+2020-05-02 12:26:44 [scrapy.core.scraper] DEBUG: Scraped from <200 https://texturehaven.com//tex/?c=wood&t=beam_wall_01>
+None
+2020-05-02 12:26:44 [scrapy.core.scraper] DEBUG: Scraped from <200 https://texturehaven.com//tex/?c=wood&t=green_rough_planks>
+None
+2020-05-02 12:26:45 [scrapy.core.scraper] DEBUG: Scraped from <200 https://texturehaven.com//tex/?c=wood&t=blue_painted_planks>
+None
+2020-05-02 12:26:45 [scrapy.core.scraper] DEBUG: Scraped from <200 https://texturehaven.com//tex/?c=wood&t=brown_planks_08>
+None
+2020-05-02 12:26:45 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://texturehaven.com//tex/?c=wood&t=brown_planks_03> (referer: https://texturehaven.com//textures/?c=wood)
+2020-05-02 12:26:45 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://texturehaven.com//tex/?c=wood&t=bark_brown_01> (referer: https://texturehaven.com//textures/?c=wood)
+2020-05-02 12:26:45 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://texturehaven.com//tex/?c=wood&t=rough_wood> (referer: https://texturehaven.com//textures/?c=wood)
+2020-05-02 12:26:45 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://texturehaven.com//tex/?c=wood&t=planks_brown_10> (referer: https://texturehaven.com//textures/?c=wood)
+2020-05-02 12:26:45 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://texturehaven.com//tex/?c=wood&t=brown_planks_05> (referer: https://texturehaven.com//textures/?c=wood)
+2020-05-02 12:26:45 [scrapy.pipelines.files] DEBUG: File (uptodate): Downloaded image from <GET https://texturehaven.com//files/tex_images/thumbnails/4a6b76ad0eb04629d37fb9abf43aed18_350_90.jpg> referred in <None>
+2020-05-02 12:26:45 [scrapy.pipelines.files] DEBUG: File (uptodate): Downloaded image from <GET https://texturehaven.com//files/tex_images/thumbnails/c76c23b1c3b0c18c16504e6f2bc1414c_350_90.jpg> referred in <None>
+2020-05-02 12:26:45 [scrapy.pipelines.files] DEBUG: File (uptodate): Downloaded image from <GET https://texturehaven.com//files/tex_images/thumbnails/5b01d90e88897b6fc7f0b57474c6b9aa_350_90.jpg> referred in <None>
+2020-05-02 12:26:45 [scrapy.pipelines.files] DEBUG: File (uptodate): Downloaded image from <GET https://texturehaven.com//files/tex_images/thumbnails/44ac0d8605d1d7fe420d63c61ba8abea_350_90.jpg> referred in <None>
+2020-05-02 12:26:45 [scrapy.pipelines.files] DEBUG: File (uptodate): Downloaded image from <GET https://texturehaven.com//files/tex_images/thumbnails/5caecb3feec8c95ae96dc368787b28c8_350_90.jpg> referred in <None>
+2020-05-02 12:26:45 [scrapy.pipelines.files] DEBUG: File (uptodate): Downloaded image from <GET https://texturehaven.com//files/tex_images/thumbnails/07bfa49757dcf2891c274ca0852f0fc5_350_90.jpg> referred in <None>
+2020-05-02 12:26:45 [scrapy.pipelines.files] DEBUG: File (uptodate): Downloaded image from <GET https://texturehaven.com//files/tex_images/thumbnails/045e8d47fec9aa903a516088e8c47bfc_350_90.jpg> referred in <None>
+2020-05-02 12:26:45 [scrapy.pipelines.files] DEBUG: File (uptodate): Downloaded image from <GET https://texturehaven.com//files/tex_images/thumbnails/f3bada4e6e508561713931284c5a0ae5_350_90.jpg> referred in <None>
+2020-05-02 12:26:45 [scrapy.core.scraper] DEBUG: Scraped from <200 https://texturehaven.com//tex/?c=wood&t=tree_bark_03>
+None
+2020-05-02 12:26:45 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://texturehaven.com//tex/?c=bricks&t=large_red_bricks> (referer: https://texturehaven.com//textures/?c=bricks)
+2020-05-02 12:26:45 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://texturehaven.com//tex/?c=bricks&t=brick_4> (referer: https://texturehaven.com//textures/?c=bricks)
+2020-05-02 12:26:45 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://texturehaven.com//tex/?c=bricks&t=factory_brick> (referer: https://texturehaven.com//textures/?c=bricks)
+2020-05-02 12:26:45 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://texturehaven.com//tex/?c=bricks&t=castle_brick_broken_06> (referer: https://texturehaven.com//textures/?c=bricks)
+2020-05-02 12:26:45 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://texturehaven.com//tex/?c=bricks&t=castle_brick_07> (referer: https://texturehaven.com//textures/?c=bricks)
+2020-05-02 12:26:46 [scrapy.core.scraper] DEBUG: Scraped from <200 https://texturehaven.com//tex/?c=wood&t=bark_brown_02>
+None
+2020-05-02 12:26:46 [scrapy.core.scraper] DEBUG: Scraped from <200 https://texturehaven.com//tex/?c=wood&t=old_planks_02>
+None
+2020-05-02 12:26:46 [scrapy.core.scraper] DEBUG: Scraped from <200 https://texturehaven.com//tex/?c=wood&t=brown_planks_03>
+None
+2020-05-02 12:26:47 [scrapy.core.scraper] DEBUG: Scraped from <200 https://texturehaven.com//tex/?c=wood&t=bark_brown_01>
+None
+2020-05-02 12:26:47 [scrapy.core.scraper] DEBUG: Scraped from <200 https://texturehaven.com//tex/?c=wood&t=rough_wood>
+None
+2020-05-02 12:26:47 [scrapy.core.scraper] DEBUG: Scraped from <200 https://texturehaven.com//tex/?c=wood&t=planks_brown_10>
+None
+2020-05-02 12:26:48 [scrapy.core.scraper] DEBUG: Scraped from <200 https://texturehaven.com//tex/?c=wood&t=brown_planks_05>
+None
+2020-05-02 12:26:48 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://texturehaven.com//tex/?c=bricks&t=castle_brick_01> (referer: https://texturehaven.com//textures/?c=bricks)
+2020-05-02 12:26:48 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://texturehaven.com//tex/?c=bricks&t=red_brick_03> (referer: https://texturehaven.com//textures/?c=bricks)
+2020-05-02 12:26:48 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://texturehaven.com//tex/?c=bricks&t=rough_block_wall> (referer: https://texturehaven.com//textures/?c=bricks)
+2020-05-02 12:26:48 [scrapy.pipelines.files] DEBUG: File (uptodate): Downloaded image from <GET https://texturehaven.com//files/tex_images/thumbnails/2cddbbd83bdfbbb6cb58388814ed234f_350_90.jpg> referred in <None>
+2020-05-02 12:26:48 [scrapy.pipelines.files] DEBUG: File (uptodate): Downloaded image from <GET https://texturehaven.com//files/tex_images/thumbnails/871fdc76c09d6fc7681ece0158b9f86d_350_90.jpg> referred in <None>
+2020-05-02 12:26:48 [scrapy.pipelines.files] DEBUG: File (uptodate): Downloaded image from <GET https://texturehaven.com//files/tex_images/thumbnails/76bd1be7b7cc1311d8c3691c0b2a5365_350_90.jpg> referred in <None>
+2020-05-02 12:26:48 [scrapy.pipelines.files] DEBUG: File (uptodate): Downloaded image from <GET https://texturehaven.com//files/tex_images/thumbnails/b57b8c0f1386ba94aa12a3218a13da13_350_90.jpg> referred in <None>
+2020-05-02 12:26:48 [scrapy.pipelines.files] DEBUG: File (uptodate): Downloaded image from <GET https://texturehaven.com//files/tex_images/thumbnails/8e62830331b7eae92c3a0489d2897116_350_90.jpg> referred in <None>
+2020-05-02 12:26:48 [scrapy.pipelines.files] DEBUG: File (uptodate): Downloaded image from <GET https://texturehaven.com//files/tex_images/thumbnails/40c3a8a388b3d5a7356ca5020a2dca0a_350_90.jpg> referred in <None>
+2020-05-02 12:26:48 [scrapy.pipelines.files] DEBUG: File (uptodate): Downloaded image from <GET https://texturehaven.com//files/tex_images/thumbnails/d8ab842a647098b05d7c7c4d67fdfddf_350_90.jpg> referred in <None>
+2020-05-02 12:26:48 [scrapy.pipelines.files] DEBUG: File (uptodate): Downloaded image from <GET https://texturehaven.com//files/tex_images/thumbnails/4013f5c5203f3eca93fae04764298482_350_90.jpg> referred in <None>
+2020-05-02 12:26:48 [scrapy.core.scraper] DEBUG: Scraped from <200 https://texturehaven.com//tex/?c=bricks&t=large_red_bricks>
+None
+2020-05-02 12:26:48 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://texturehaven.com//tex/?c=bricks&t=church_bricks_03> (referer: https://texturehaven.com//textures/?c=bricks)
+2020-05-02 12:26:48 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://texturehaven.com//tex/?c=bricks&t=castle_brick_02_red> (referer: https://texturehaven.com//textures/?c=bricks)
+2020-05-02 12:26:48 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://texturehaven.com//tex/?c=bricks&t=church_bricks_02> (referer: https://texturehaven.com//textures/?c=bricks)
+2020-05-02 12:26:48 [scrapy.core.scraper] DEBUG: Scraped from <200 https://texturehaven.com//tex/?c=bricks&t=brick_4>
+None
+2020-05-02 12:26:49 [scrapy.core.scraper] DEBUG: Scraped from <200 https://texturehaven.com//tex/?c=bricks&t=factory_brick>
+None
+2020-05-02 12:26:49 [scrapy.core.scraper] DEBUG: Scraped from <200 https://texturehaven.com//tex/?c=bricks&t=castle_brick_broken_06>
+None
+2020-05-02 12:26:49 [scrapy.core.scraper] DEBUG: Scraped from <200 https://texturehaven.com//tex/?c=bricks&t=castle_brick_07>
+None
+2020-05-02 12:26:49 [scrapy.core.scraper] DEBUG: Scraped from <200 https://texturehaven.com//tex/?c=bricks&t=castle_brick_01>
+None
+2020-05-02 12:26:50 [scrapy.core.scraper] DEBUG: Scraped from <200 https://texturehaven.com//tex/?c=bricks&t=red_brick_03>
+None
+2020-05-02 12:26:50 [scrapy.core.scraper] DEBUG: Scraped from <200 https://texturehaven.com//tex/?c=bricks&t=rough_block_wall>
+None
+2020-05-02 12:26:50 [scrapy.pipelines.files] DEBUG: File (uptodate): Downloaded image from <GET https://texturehaven.com//files/tex_images/thumbnails/672a197b3a046fc5ef1739a64f6e9e3d_350_90.jpg> referred in <None>
+2020-05-02 12:26:50 [scrapy.pipelines.files] DEBUG: File (uptodate): Downloaded image from <GET https://texturehaven.com//files/tex_images/thumbnails/1530dc853aca2f9aa6afe8e1d6f79305_350_90.jpg> referred in <None>
+2020-05-02 12:26:50 [scrapy.pipelines.files] DEBUG: File (uptodate): Downloaded image from <GET https://texturehaven.com//files/tex_images/thumbnails/b86b3a6271744da0dc1932233914b82d_350_90.jpg> referred in <None>
+2020-05-02 12:26:51 [scrapy.core.scraper] DEBUG: Scraped from <200 https://texturehaven.com//tex/?c=bricks&t=church_bricks_03>
+None
+2020-05-02 12:26:51 [scrapy.core.scraper] DEBUG: Scraped from <200 https://texturehaven.com//tex/?c=bricks&t=castle_brick_02_red>
+None
+2020-05-02 12:26:51 [scrapy.core.scraper] DEBUG: Scraped from <200 https://texturehaven.com//tex/?c=bricks&t=church_bricks_02>
+None
+2020-05-02 12:26:51 [scrapy.core.engine] INFO: Closing spider (finished)
+2020-05-02 12:26:51 [scrapy.statscollectors] INFO: Dumping Scrapy stats:
+{'downloader/request_bytes': 64932,
+ 'downloader/request_count': 179,
+ 'downloader/request_method_count/GET': 179,
+ 'downloader/response_bytes': 2165293,
+ 'downloader/response_count': 179,
+ 'downloader/response_status_count/200': 178,
+ 'downloader/response_status_count/301': 1,
+ 'elapsed_time_seconds': 54.596942,
+ 'file_count': 177,
+ 'file_status_count/uptodate': 177,
+ 'finish_reason': 'finished',
+ 'finish_time': datetime.datetime(2020, 5, 2, 4, 26, 51, 646284),
+ 'item_scraped_count': 167,
+ 'log_count/DEBUG': 523,
+ 'log_count/INFO': 10,
+ 'request_depth_max': 2,
+ 'response_received_count': 178,
+ 'scheduler/dequeued': 179,
+ 'scheduler/dequeued/memory': 179,
+ 'scheduler/enqueued': 179,
+ 'scheduler/enqueued/memory': 179,
+ 'start_time': datetime.datetime(2020, 5, 2, 4, 25, 57, 49342)}
+2020-05-02 12:26:51 [scrapy.core.engine] INFO: Spider closed (finished)
